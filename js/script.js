@@ -24,7 +24,7 @@ $(document).ready(function () {
 
 
     $('.test_slide_buttons_prev').on("click", function () {
-        if (step > 0) {
+        if (step > 1) {
             $('.test_content_stages_items_wrapper').slick("slickPrev");
             step--;
         }
