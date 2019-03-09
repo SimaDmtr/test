@@ -37,6 +37,7 @@
                         </p>
                         <a href="#">Посмотреть на карте адреса складов</a>
                     </div>
+                    <div id="map"></div>
                 </div>
                 <div class="header_row_call">
                     <div class="header_row_call_img">
@@ -161,7 +162,7 @@
         <p>Расчет пройден на:</p>
         <div class="progress_bar">
             <div class="progress_bar_inner">
-                <span id="percent"></span>
+                <span id="percent">14%</span>
             </div>
         </div>
     </div>
@@ -216,39 +217,44 @@
                                             листовая</label>
                                         <div class="check"></div>
                                     </div>
+                                    <span class="icon-quest" data-tooltip="1"></span>
+
                                 </div>
                                 <div class="test_content_stages_elem">
                                     <label class="test_content_stages_elem_img" for="q2_2"><span
                                             style="background: url(img/2.2.png) no-repeat center; background-size: cover;"></span></label>
-
                                     <div class="label_wrapper">
                                         <input type="radio" id="q2_2" name="q2" class="q2">
                                         <label class="word_label" for="q2_2">Битумная черепица
                                             (мягкая кровля)</label>
                                         <div class="check"></div>
                                     </div>
+                                    <span class="icon-quest" data-tooltip="1"></span>
+
                                 </div>
                                 <div class="test_content_stages_elem">
                                     <label class="test_content_stages_elem_img" for="q2_3"><span
                                             style="background: url(img/2.3.png) no-repeat center; background-size: cover;"></span></label>
-
                                     <div class="label_wrapper">
                                         <input type="radio" id="q2_3" name="q2" class="q2">
                                         <label class="word_label" for="q2_3">Модульная
                                             металлочерепица</label>
                                         <div class="check"></div>
                                     </div>
+                                    <span class="icon-quest" data-tooltip="1"></span>
+
                                 </div>
                                 <div class="test_content_stages_elem">
                                     <label class="test_content_stages_elem_img" for="q2_4"><span
                                             style="background: url(img/2.4.png) no-repeat center; background-size: cover;"></span></label>
-
                                     <div class="label_wrapper">
                                         <input type="radio" id="q2_4" name="q2" class="q2">
                                         <label class="word_label" for="q2_4">Модульная
                                             металлочерепица</label>
                                         <div class="check"></div>
                                     </div>
+                                    <span class="icon-quest" data-tooltip="1"></span>
+
                                 </div>
                             </div>
                         </div>
@@ -279,50 +285,52 @@
                             </div>
                         </div>
                         <div class="test_content_radios rad1">
-                        <p class="test_stage_title">4. Выберите тип материала</p>
-                        <div class="test_content_radios_wrapper">
-                            <div class="test_content_radios_left">
-                                <div class="label_wrapper">
-                                    <input type="radio" id="q4_1" name="q4" class="q4">
-                                    <label class="word_label" for="q4_1">Частный дом</label>
-                                    <div class="check"></div>
-                                </div>
-                                <div class="label_wrapper">
-                                    <input type="radio" id="q4_2" name="q4" class="q4">
-                                    <label class="word_label" for="q4_2">Церковь</label>
-                                    <div class="check"></div>
-                                </div>
-                                <div class="label_wrapper">
-                                    <input type="radio" id="q4_3" name="q4" class="q4">
-                                    <label class="word_label" for="q4_3">Промышленный объект</label>
-                                    <div class="check"></div>
-                                </div>
-                                <div class="label_wrapper">
-                                    <input type="radio" id="q4_4" name="q4" class="q4">
-                                    <label class="word_label" for="q4_4">Церковь</label>
-                                    <div class="check"></div>
-                                </div>
-                                <div class="label_wrapper">
-                                    <input type="radio" id="q4_5" name="q4" class="q4">
-                                    <label class="word_label" for="q4_5">Промышленный объект</label>
-                                    <div class="check"></div>
-                                </div>
-                            </div>
-                            <div class="test_content_radios_right"></div>
-                        </div>
-                    </div>
-                        <div class="test_content_radios rad2">
                             <p class="test_stage_title">4. Выберите тип материала</p>
                             <div class="test_content_radios_wrapper">
                                 <div class="test_content_radios_left">
                                     <div class="label_wrapper">
+                                        <input type="radio" id="q4_1" name="q4" class="q4">
+                                        <label class="word_label" for="q4_1">Частный дом</label>
+                                        <div class="check"></div>
+                                    </div>
+                                    <div class="label_wrapper">
+                                        <input type="radio" id="q4_2" name="q4" class="q4">
+                                        <label class="word_label" for="q4_2">Церковь</label>
+                                        <div class="check"></div>
+                                    </div>
+                                    <div class="label_wrapper">
+                                        <input type="radio" id="q4_3" name="q4" class="q4">
+                                        <label class="word_label" for="q4_3">Промышленный объект</label>
+                                        <div class="check"></div>
+                                    </div>
+                                    <div class="label_wrapper">
+                                        <input type="radio" id="q4_4" name="q4" class="q4">
+                                        <label class="word_label" for="q4_4">Церковь</label>
+                                        <div class="check"></div>
+                                    </div>
+                                    <div class="label_wrapper">
+                                        <input type="radio" id="q4_5" name="q4" class="q4">
+                                        <label class="word_label" for="q4_5">Промышленный объект</label>
+                                        <div class="check"></div>
+                                    </div>
+                                </div>
+                                <div class="test_content_radios_right"></div>
+                            </div>
+                        </div>
+                        <div class="test_content_radios rad2">
+                            <p class="test_stage_title">5. Выберите тип материала</p>
+                            <div class="test_content_radios_wrapper">
+                                <div class="test_content_radios_left">
+                                    <div class="label_wrapper">
                                         <input type="radio" id="q5_1" name="q5" class="q5">
-                                        <label class="word_label" for="q5_1">ДА, мне важно узнaть полную стоимость</label>
+                                        <label class="word_label" for="q5_1">ДА, мне важно узнaть полную
+                                            стоимость</label>
                                         <div class="check"></div>
                                     </div>
                                     <div class="label_wrapper">
                                         <input type="radio" id="q5_2" name="q5" class="q5">
-                                        <label class="word_label" for="q5_2">нет, меня интересует лишь стоимость материалов</label>
+                                        <label class="word_label" for="q5_2">нет, меня интересует лишь стоимость
+                                            материалов</label>
                                         <div class="check"></div>
                                     </div>
                                     <div class="label_wrapper">
@@ -336,7 +344,7 @@
                             </div>
                         </div>
                         <div class="test_content_radios rad3">
-                            <p class="test_stage_title">4. Выберите тип материала</p>
+                            <p class="test_stage_title">6. Выберите тип материала</p>
                             <div class="test_content_radios_wrapper">
                                 <div class="test_content_radios_left">
                                     <div class="label_wrapper">
@@ -351,7 +359,8 @@
                                     </div>
                                     <div class="label_wrapper">
                                         <input type="radio" id="q6_3" name="q6" class="q6">
-                                        <label class="word_label" for="q6_3">Хочу узнать стоимость отдельно и монтажа</label>
+                                        <label class="word_label" for="q6_3">Хочу узнать стоимость отдельно и
+                                            монтажа</label>
                                         <div class="check"></div>
                                     </div>
 
@@ -359,11 +368,58 @@
                                 <div class="test_content_radios_right"></div>
                             </div>
                         </div>
+                        <div class="last_slide">
+                            <p class="last_slide_title">Менеджер уже приступил к расчёту кровли</p>
+                            <p class="last_slide_desc">Введите Ваш телефон и получите стоимость в течение 15 минут
+                                на:</p>
+                            <div class="last_slide_radios">
+                                <div class="label_wrapper">
+                                    <input type="radio" id="q7_1" name="q7" class="q7">
+                                    <label class="word_label" for="q7_1"><img src="img/q.png" alt="">WhatsApp</label>
+                                    <div class="check"></div>
+                                </div>
+                                <div class="label_wrapper">
+                                    <input type="radio" id="q7_2" name="q7" class="q7">
+                                    <label class="word_label" for="q7_2"><img src="img/w.png" alt="">Viber</label>
+                                    <div class="check"></div>
+                                </div>
+                                <div class="label_wrapper">
+                                    <input type="radio" id="q7_3" name="q7" class="q7">
+                                    <label class="word_label" for="q7_3"><img src="img/e.png" alt="">Telegram</label>
+                                    <div class="check"></div>
+                                </div>
+                                <div class="label_wrapper">
+                                    <input type="radio" id="q7_4" name="q7" class="q7">
+                                    <label class="word_label" for="q7_4"><img src="img/r.png" alt="">По SMS</label>
+                                    <div class="check"></div>
+                                </div>
+                            </div>
+                            <form id="tel" class="last_slide_tel">
+                                <input placeholder="+375 (**) ***-**-**" type="text" required id="mask" name="mask">
+                                <label for="mask">Ваш телефон</label>
+                            </form>
+                            <button form="tel" class="last_slide_button">
+                                ПОЛУЧИТЬ РЕЗУЛЬТАТ РАСЧЕТА<br>
+                                + скидку
+
+                            </button>
+                            <p class="lock"><img src="img/lock.png" alt="">Ваши данные в безопастности</p>
+                        </div>
                     </div>
                     <div class="test_slide_buttons">
                         <button class="test_slide_buttons_prev"><span class="icon-arrow"></span>назад</button>
                         <button class="test_slide_buttons_next">далее<span class="icon-arrow"></span></button>
-
+                    </div>
+                    <div class="confirm_popup">
+                        <div class="conf_phone">
+                            <img src="img/phone_pop.png" alt=""></div>
+                        <p class="popup_conf">Заявка отправлена</p>
+                        <p class="calc_started">Мы уже приступили<br>
+                            к расчету стоимости</p>
+                        <p class="calc_desc">Мы вышлем Вам стоимость на указанный номер телефона,<br>
+                            а также наш менеджер перезвонит Вам для уточнения<br>
+                            мелких деталей.</p>
+                        <img class="confirm_popup_close" src="img/close.png" alt="">
                     </div>
                 </div>
                 <div class="discount">
@@ -383,10 +439,54 @@
         </div>
     </div>
 </div>
+<div class="help_block tooltip" id="tip-1">
+    <p class="help_block_title">Металлочерепица листовая</p>
+    <p class="help_block_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation.</p>
+    <div class="help_block_price">
+        <p>Цена за м. кв.:</p>
+        <span>от 9,85 &#x20bd;</span>
+    </div>
+</div>
+<div class="help_block tooltip" id="tip-2">
+    <p class="help_block_title">Металлочерепица листовая</p>
+    <p class="help_block_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation.</p>
+    <div class="help_block_price">
+        <p>Цена за м. кв.:</p>
+        <span>от 9,85 &#x20bd;</span>
+    </div>
+</div>
+<div class="help_block tooltip" id="tip-3">
+    <p class="help_block_title">Металлочерепица листовая</p>
+    <p class="help_block_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation.</p>
+    <div class="help_block_price">
+        <p>Цена за м. кв.:</p>
+        <span>от 9,85 &#x20bd;</span>
+    </div>
+</div>
+<div class="help_block tooltip" id="tip-4">
+    <p class="help_block_title">Металлочерепица листовая</p>
+    <p class="help_block_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation.</p>
+    <div class="help_block_price">
+        <p>Цена за м. кв.:</p>
+        <span>от 9,85 &#x20bd;</span>
+    </div>
+</div>
 </body>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/ion.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af7c80f2aae44c290eee1fa625d42c6925b6e8023cbb747f8eafc219eb1fa9a37&amp;width=100%&amp;lang=ru_RU&amp;id=map&amp;scroll=true"></script>
+
 <script src="js/script.js"></script>
 </html>
