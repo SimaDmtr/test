@@ -95,7 +95,7 @@ $(document).ready(function () {
                 quest_num.innerHTML = '7';
                 $('.test_slide_buttons').css({"display": "none"});
                 $('.slick-track').css({
-                    "padding-bottom":"0px"
+                    "padding-bottom": "0px"
                 });
                 break;
         }
@@ -163,7 +163,7 @@ $(document).ready(function () {
                 quest_num.innerHTML = '7';
                 $('.test_slide_buttons').css({"display": "none"});
                 $('.slick-track').css({
-                    "padding-bottom":"0px"
+                    "padding-bottom": "0px"
                 });
                 break;
         }
@@ -213,20 +213,27 @@ $(document).ready(function () {
                 $('#mask').css({
                     "border-color": "green"
                 })
+                document.getElementById('q7_1').disabled = true;
+                document.getElementById('q7_2').disabled = true;
+                document.getElementById('q7_3').disabled = true;
+                document.getElementById('q7_4').disabled = true;
+                document.getElementById('mask').disabled = true;
             } else {
                 $('#mask').css({
                     "border-color": "red"
                 })
             }
-        }else{
+        } else {
             $('.last_slide .check').css({
-                "border-color":"red"
+                "border-color": "red"
             })
             $('.last_slide .label_wrapper').click(function () {
                 $('.last_slide .check').css({
-                    "border-color":"#999999"
+                    "border-color": "#999999"
                 })
+
             })
+
         }
     })
     $('.confirm_popup_close').click(function () {
@@ -235,25 +242,25 @@ $(document).ready(function () {
             "visibility": "hidden"
         })
     })
-    $('.icon-quest').mousemove(function(e){
+    $('.icon-quest').mousemove(function (e) {
         var elemWidth = $('.quest2 .test_content_stages_elem').width();
         var X = e.pageX;
         var Y = e.pageY;
-        var top = Y  + 40 + 'px';
-        var left = X  - elemWidth + 'px';
-        var width = elemWidth*2+ 'px';
+        var top = Y + 40 + 'px';
+        var left = X - elemWidth + 'px';
+        var width = elemWidth * 2 + 'px';
         var id = $(this).data('tooltip');
-        $('#tip-'+id).css({
-            display:"flex",
+        $('#tip-' + id).css({
+            display: "flex",
             top: top,
             left: left,
-            width:width
+            width: width
         });
     });
-    $('.icon-quest').mouseout (function(){
+    $('.icon-quest').mouseout(function () {
         var id = $(this).data('tooltip');
-        $('#tip-'+id).css({
-            display:"none"
+        $('#tip-' + id).css({
+            display: "none"
         });
     });
 });
