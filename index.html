@@ -3,517 +3,1879 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paradigma</title>
+    <title>Katrin</title>
     <link rel="stylesheet" href="fonts/stylesheet.css">
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/ion.rangeSlider.css">
-    <link rel="stylesheet" href="css/ion.rangeSlider.skinHTML5.css">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
-<div class="fixed_bar">
-    <div class="fixed_bar_item"><span class="icon-Forma1"></span>
-        <p>замер</p></div>
-    <div class="fixed_bar_item"><span class="icon-Forma2"></span>
-        <p>калькулятор</p></div>
-    <div class="fixed_bar_item" style="border-bottom: none"><span class="icon-Forma3"></span>
-        <p>акции</p></div>
-    <div class="label"><p>навигация</p></div>
-</div>
-<div class="first_screen">
-    <header>
-        <div class="container">
-            <div class="header_row">
-                <div class="header_row_logo">
-                    <a href="#" class="icon-logo"></a>
-                    <p class="header_row_logo_desc">Призводитель кровельных материалов,
-                        профнастила,доп. элементов в Махачкале
-                        с 2002 года</p>
-                </div>
-                <div class="header_row_map">
-                    <img src="img/fancy-marker.png" alt="">
-                    <div class="header_row_map_desc">
-                        <p>Республика Дагестан, Махачкала
-                            ул. Аметхана султана, Пост Гаи
-                        </p>
-                        <a href="#">Посмотреть на карте адреса складов</a>
-                    </div>
-                    <div id="map"></div>
-                </div>
-                <div class="header_row_call">
-                    <div class="header_row_call_img">
-                        <img src="img/call.png" alt="">
-                    </div>
-                    <div class="header_row_call_numbers">
-                        <a href="tel:+79882000900">+7 (988) 2000-900</a>
-                        <a href="tel:78722695683">7 (8722) 69-56-83</a>
-                        <p>Ежедневно с 9:00 до 20:00</p>
-                    </div>
-                </div>
-                <div class="menu-wrap">
-                    <div class="menu-item-line">
-                        <span></span>
-                    </div>
+<section id="first_screen" class="first_screen">
+    <header class="container">
+        <div class="header_wrap">
+            <div class="header_logo">
+                <a href="#first_screen" class="logo_img_wrap"><img src="img/logo.png" alt=""></a>
+                <p class="header_logo_desc">Организация банкетов, фуршетов, кофе -
+                    брейк и барбекю для предприятий и
+                    частных лиц в Москве с 2012 года</p>
+            </div>
+            <div class="header_downlaod">
+                <img src="img/menu.png" alt="">
+                <div class="header_downlaod_content">
+                    <p class="register">Скачать меню</p>
+                    <span>(1,2 Mb)</span>
                 </div>
             </div>
-            <div class="header_shadow"></div>
-            <nav class="header_nav">
-                <ul>
-                    <li><a href="#">главная</a>
-                        <div class="underline"></div>
-                    </li>
-                    <li><a href="#">калькулятор</a>
-                        <div class="underline"></div>
-                    </li>
-                    <li><a href="#">о компании</a>
-                        <div class="underline"></div>
-                    </li>
-                    <li><a href="#">каталог</a>
-                        <div class="underline"></div>
-                    </li>
-                    <li><a href="#">наш подход</a>
-                        <div class="underline"></div>
-                    </li>
-                    <li><a href="#">гарантии</a>
-                        <div class="underline"></div>
-                    </li>
-                    <li><a href="#">примеры объектов</a>
-                        <div class="underline"></div>
-                    </li>
-                    <li><a href="#">схема работы</a>
-                        <div class="underline"></div>
-                    </li>
-                    <li><a href="#">расчет стоимости</a>
-                        <div class="underline"></div>
-                    </li>
-                    <li><a href="#">акции и скидки</a>
-                        <div class="underline"></div>
-                    </li>
-                    <li><a href="#">контакты</a>
-                        <div class="underline"></div>
-                    </li>
-                </ul>
-            </nav>
+            <div class="header_soc">
+                <p>Напишите напрямую:</p>
+                <div class="header_soc_row">
+                    <a class="whatsup" href="#"><img src="img/whatsup.png" alt=""><span>WhatsApp</span></a>
+                    <a class="viber" href="#"><img src="img/viber.png" alt=""><span>Viber</span></a>
+                    <a class="email" href="#"><img src="img/Mail.png" alt=""><span>E-mail</span></a>
+                </div>
+            </div>
+
+            <div class="header_phones">
+                <p>Есть вопрос? Звоните:</p>
+                <a href="tel:+74957922825"><img src="img/phone.png" alt="">+7 (495) 792-28-25</a>
+                <p>Пн-Вс 10:00-22:00</p>
+            </div>
+            <div class="mobile_item">
+                <div class="header_phones">
+                    <p>Есть вопрос? Звоните:</p>
+                    <a href="tel:+74957922825"><img src="img/phone.png" alt="">+7 (495) 792-28-25</a>
+                    <p>Пн-Вс 10:00-22:00</p>
+                </div>
+                <div class="plate plate5">
+                    <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                        <path class="line line1" d="M 30,35 H 70 "/>
+                        <path class="line line2" d="M 50,50 H 30 L 34,32"/>
+                        <path class="line line3" d="M 50,50 H 70 L 66,68"/>
+                        <path class="line line4" d="M 30,65 H 70 "/>
+                    </svg>
+                    <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+                        <path class="line" d="M 34,32 L 66,68"/>
+                        <path class="line" d="M 66,32 L 34,68"/>
+                    </svg>
+                </div>
+            </div>
         </div>
     </header>
-    <div class="first_screen_banner container">
-        <div class="first_screen_banner_left">
-            <h1>Лидер по производству
-                кровельных материалов и
-                профнастила в Махачкале.
-                Работаем с 2002 года</h1>
-            <div class="first_screen_banner_left_adv">
-                <div class="first_screen_banner_left_adv_item">
+    <nav class="first_screen_nav">
+        <ul class="container">
+            <li><a class="menu_item" href="#main">Главная</a></li>
+            <li><a class="menu_item" href="#services">Услуги</a></li>
+            <li><a class="menu_item" href="#for">Для кого</a></li>
+            <li><a class="menu_item" href="#menu">Меню блюд</a></li>
+            <li><a class="menu_item" href="#stock">Акции и подарки</a></li>
+            <li><a class="menu_item" href="#portfolio">Примеры наших работ</a></li>
+            <li><a class="menu_item" href="#about">О компании</a></li>
+            <li><a class="menu_item" href="#feedbacks">Клиенты и отзывы</a></li>
+            <li><a class="menu_item" href="#advantages">Преимущества</a></li>
+            <li><a class="menu_item" href="#scheme">Схема работы</a></li>
+            <li><a class="menu_item" href="#consult">Консультация</a></li>
+            <li><a class="menu_item" href="#contacts">Контакты</a></li>
+        </ul>
+    </nav>
+    <nav class="mobile_nav_wrapper" data-options='{"touch" : false}' data-fancybox data-src="#myElement">
+        <div class="mobile_nav_inner">
+            <div class="header_downlaod">
+                <img src="img/menu.png" alt="">
+                <div class="header_downlaod_content">
+                    <p class="register">Скачать меню</p>
+                    <span>(1,2 Mb)</span>
+                </div>
+            </div>
+            <div class="header_soc">
+                <p>Напишите напрямую:</p>
+                <div class="header_soc_row">
+                    <a class="whatsup" href="#"><img src="img/whatsup.png" alt=""><span>WhatsApp</span></a>
+                    <a class="viber" href="#"><img src="img/viber.png" alt=""><span>Viber</span></a>
+                    <a class="email" href="#"><img src="img/Mail.png" alt=""><span>E-mail</span></a>
+                </div>
+            </div>
+            <ul>
+                <li><a class="menu_item" href="#main">Главная</a></li>
+                <li><a class="menu_item" href="#services">Услуги</a></li>
+                <li><a class="menu_item" href="#for">Для кого</a></li>
+                <li><a class="menu_item" href="#menu">Меню блюд</a></li>
+                <li><a class="menu_item" href="#stock">Акции и подарки</a></li>
+                <li><a class="menu_item" href="#portfolio">Примеры наших работ</a></li>
+                <li><a class="menu_item" href="#about">О компании</a></li>
+                <li><a class="menu_item" href="#feedbacks">Клиенты и отзывы</a></li>
+                <li><a class="menu_item" href="#advantages">Преимущества</a></li>
+                <li><a class="menu_item" href="#scheme">Схема работы</a></li>
+                <li><a class="menu_item" href="#consult">Консультация</a></li>
+                <li><a class="menu_item" href="#contacts">Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="first_screen_content">
+        <div class="parallax-scene" id="scene-1">
+            <div data-depth="3.5" class="parallax-item parallax-test-img-1">
+                <img src="img/fruits1.png" alt="">
+            </div>
+            <div data-depth="1.5" class="parallax-item parallax-test-img-2">
+                <img src="img/fruits2.png" alt="">
+            </div>
+            <div data-depth="2.5" class="parallax-item parallax-test-img-3">
+                <img src="img/fruits3.png" alt="">
+            </div>
+            <div data-depth="2" class="parallax-item parallax-test-img-4">
+                <img src="img/fruits4.png" alt="">
+            </div>
+            <div data-depth="3" class="parallax-item parallax-test-img-5">
+                <img src="img/fruits5.png" alt="">
+            </div>
+            <div data-depth="1" class="parallax-item parallax-test-img-6">
+                <img src="img/fruits6.png" alt="">
+            </div>
+            <div data-depth="1.5" class="parallax-item parallax-test-img-8">
+                <img src="img/fruits8.png" alt="">
+            </div>
+            <div data-depth="2.5" class="parallax-item parallax-test-img-9">
+                <img src="img/fruits9.png" alt="">
+            </div>
+            <div data-depth="3.5" class="parallax-item parallax-test-img-10">
+                <img src="img/fruits10.png" alt="">
+            </div>
+        </div>
+        <div class="container">
+            <div class="first_screen_content_left">
+                <div class="first_screen_content_title">
+                    <p class="screen_content_title_desc">Организуем мероприятие на любой вкус, цвет и кошелек</p>
+                    <h1 class="first_screen_content_title_text"><span>Кейтеринг в Москве
+                    и области</span> от 650 руб/чел</h1>
+                </div>
+                <div class="first_screen_content_list_wrapper">
+                    <div class="free_text">
+                        <div class="free_text_line"></div>
+                        <span>бесплатно</span></div>
+                    <ul class="first_screen_content_list">
+                        <li>
+                            <p>Бесплатный расчет за 30 минут</p>
+                        </li>
+                        <li>
+                            <p>Бесплатный подбор площадки</p>
+                        </li>
+                        <li>
+                            <p>Бесплатная дегустация</p>
+                        </li>
+                    </ul>
+                    <ul class="first_screen_content_list">
+                        <li>
+                            <p>Без агрегаторов и посредников</p>
+                        </li>
+                        <li>
+                            <p>Без пробкового сбора</p>
+                        </li>
+                        <li>
+                            <p>Производство по стандартам ХАССП</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="first_screen_content_right">
+                <p class="first_screen_content_right_title">Получите индивидуальный расчет Вашего
+                    мероприятия уже через 15 минут</p>
+                <form id="first_screen_form" action="mail.php">
+                    <div class="form_row">
+                        <span class="row_num">01<span class="row_num_line"></span></span>
+                        <select name="sources" id="type" class="custom-select sources"
+                                placeholder="Выездной кофе-брейк" required>
+                            <option selected value="profile">Выездной банкет</option>
+                            <option value="word">Выездной фуршет</option>
+                            <option value="hashtag">Барбекю</option>
+                            <option value="hashtag">Кофе-брейк</option>
+                            <option value="hashtag">Шведский стол</option>
+                            <option value="hashtag">Доставка закусок</option>
+                        </select>
+                        <label for="type">Выберите формат мероприятия:</label></div>
+                    <div class="form_row">
+                        <span class="row_num">02<span class="row_num_line"></span></span>
+                        <select name="sources" id="form" class="custom-select sources"
+                                placeholder="Выездной кофе-брейк" required>
+                            <option selected value="profile">Выездной банкет</option>
+                            <option value="word">Выездной фуршет</option>
+                            <option value="hashtag">Барбекю</option>
+                            <option value="hashtag">Кофе-брейк</option>
+                            <option value="hashtag">Шведский стол</option>
+                            <option value="hashtag">Доставка закусок</option>
+                        </select>
+                        <label for="type">Выберите формат мероприятия:</label></div>
+                    <div class="form_row non_select">
+                        <span class="row_num">03<span class="row_num_line"></span></span>
+                        <div class="form_row_input"><label for="count">Кол-во человек:</label>
+                            <input required type="number" id="count" placeholder="25"></div>
+                    </div>
+                    <div class="form_row non_select">
+                        <span class="row_num">04<span class="row_num_line"></span></span>
+                        <div class="form_row_input"><label for="date">Выберите дату</label>
+                            <input required type="date" id="date" placeholder="Например, 01.01.2019"></div>
+                    </div>
+                    <div class="form_row non_select">
+                        <span class="row_num"><span class="row_num_line"></span></span>
+                        <div class="form_row_input"><label for="form_mail">Ваш E-mail:</label>
+                            <input required type="email" id="form_mail" placeholder="example@example.com"></div>
+                    </div>
+                    <div class="form_row non_select">
+                        <span class="row_num"></span>
+                        <div class="form_row_input"><label for="form_tel">Ваш телефон:</label>
+                            <input required type="tel" id="form_tel" placeholder="+375 (**) ***-**-**"></div>
+                    </div>
+                    <div class="form_row_input">
+                        <button form="first_screen_form" type="submit" class="btn btn-form">Выслать мне расчёт
+                        </button>
+                        <img class="book_img" src="img/book.png" alt="">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="services" class="second_screen">
+    <div class="container">
+        <h2>Специализируемся на оказании <span>следующих услуг</span><span class="circle"></span></h2>
+        <div class="second_screen_content">
+            <div class="second_screen_item first">
+                <div class="first_row">
+                    <img src="img/big2.png" alt="">
+                    <p>Предусмотрен наличный
+                        и безналичный расчет</p>
+                </div>
+                <div class="first_row">
+                    <img src="img/big1.png" alt="">
+                    <div class="first_col">
+                        <p>Спец. условия для
+                            организаторов и Event-
+                            агентств</p>
+                        <span class="take_offer">Получить предложение</span>
+                    </div>
+                </div>
+            </div>
+            <div class="second_screen_item" style="background-image: url(img/ser1.png)">
+                <div class="second_screen_item_inner">
+                    <p class="service_num">01</p>
+                    <p class="service_name">Выездной банкет</p>
+                    <p class="service_price">от 2500 руб/чел</p>
+                </div>
+                <div class="second_screen_item_hover">
+                    <p class="service_name">Выездной банкет</p>
+                    <p class="service_title">Получите предложение по выездному
+                        фуршету в котором:</p>
+                    <ul class="service_list">
+                        <li><img src="img/check.png" alt="">
+                            <p>Стоимость фуршета с обсуживанем</p></li>
+                        <li><img src="img/check.png" alt="">
+                            <p>Стоимость доставки фуршетных
+                                закусок</p>
+                        </li>
+                        <li><img src="img/check.png" alt="">
+                            <p>Порядок ценообразования и
+                                факторы влияющие на цену</p>
+                        </li>
+                    </ul>
+                    <ul class="service_list list2">
+                        <li><img src="img/File.png" alt="">
+                            <p class="take_offer">Получить предложение</p></li>
+                        <li><img src="img/Eye.png" alt="">
+                            <a href="#portfolio">Смотреть примеры работ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second_screen_item" style="background-image: url(img/ser2.png)">
+                <div class="second_screen_item_inner">
+                    <p class="service_num">02</p>
+                    <p class="service_name">Выездной фуршет</p>
+                    <p class="service_price">от 2500 руб/чел</p>
+                </div>
+                <div class="second_screen_item_hover">
+                    <p class="service_name">Выездной фуршет</p>
+                    <p class="service_title">Получите предложение по выездному
+                        фуршету в котором:</p>
+                    <ul class="service_list">
+                        <li><img src="img/check.png" alt="">
+                            <p>Стоимость фуршета с обсуживанем</p></li>
+                        <li><img src="img/check.png" alt="">
+                            <p>Стоимость доставки фуршетных
+                                закусок</p>
+                        </li>
+                        <li><img src="img/check.png" alt="">
+                            <p>Порядок ценообразования и
+                                факторы влияющие на цену</p>
+                        </li>
+                    </ul>
+                    <ul class="service_list list2">
+                        <li><img src="img/File.png" alt="">
+                            <p class="take_offer">Получить предложение</p></li>
+                        <li><img src="img/Eye.png" alt="">
+                            <a href="#portfolio">Смотреть примеры работ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second_screen_item" style="background-image: url(img/ser3.png)">
+                <div class="second_screen_item_inner">
+                    <p class="service_num">03</p>
+                    <p class="service_name">Барбекю</p>
+                    <p class="service_price">от 2500 руб/чел</p>
+                </div>
+                <div class="second_screen_item_hover">
+                    <p class="service_name">Барбекю</p>
+                    <p class="service_title">Получите предложение по выездному
+                        фуршету в котором:</p>
+                    <ul class="service_list">
+                        <li><img src="img/check.png" alt="">
+                            <p>Стоимость фуршета с обсуживанем</p></li>
+                        <li><img src="img/check.png" alt="">
+                            <p>Стоимость доставки фуршетных
+                                закусок</p>
+                        </li>
+                        <li><img src="img/check.png" alt="">
+                            <p>Порядок ценообразования и
+                                факторы влияющие на цену</p>
+                        </li>
+                    </ul>
+                    <ul class="service_list list2">
+                        <li><img src="img/File.png" alt="">
+                            <p class="take_offer">Получить предложение</p></li>
+                        <li><img src="img/Eye.png" alt="">
+                            <a href="#portfolio">Смотреть примеры работ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second_screen_item" style="background-image: url(img/ser4.png)">
+                <div class="second_screen_item_inner">
+                    <p class="service_num">01</p>
+                    <p class="service_name">Выездной банкет</p>
+                    <p class="service_price">от 2500 руб/чел</p>
+                </div>
+                <div class="second_screen_item_hover">
+                    <p class="service_name">Выездной банкет</p>
+                    <p class="service_title">Получите предложение по выездному
+                        фуршету в котором:</p>
+                    <ul class="service_list">
+                        <li><img src="img/check.png" alt="">
+                            <p>Стоимость фуршета с обсуживанем</p></li>
+                        <li><img src="img/check.png" alt="">
+                            <p>Стоимость доставки фуршетных
+                                закусок</p>
+                        </li>
+                        <li><img src="img/check.png" alt="">
+                            <p>Порядок ценообразования и
+                                факторы влияющие на цену</p>
+                        </li>
+                    </ul>
+                    <ul class="service_list list2">
+                        <li><img src="img/File.png" alt="">
+                            <p class="take_offer">Получить предложение</p></li>
+                        <li><img src="img/Eye.png" alt="">
+                            <a href="#portfolio">Смотреть примеры работ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second_screen_item" style="background-image: url(img/ser5.png)">
+                <div class="second_screen_item_inner">
+                    <p class="service_num">02</p>
+                    <p class="service_name">Выездной фуршет</p>
+                    <p class="service_price">от 2500 руб/чел</p>
+                </div>
+                <div class="second_screen_item_hover">
+                    <p class="service_name">Выездной фуршет</p>
+                    <p class="service_title">Получите предложение по выездному
+                        фуршету в котором:</p>
+                    <ul class="service_list">
+                        <li><img src="img/check.png" alt="">
+                            <p>Стоимость фуршета с обсуживанем</p></li>
+                        <li><img src="img/check.png" alt="">
+                            <p>Стоимость доставки фуршетных
+                                закусок</p>
+                        </li>
+                        <li><img src="img/check.png" alt="">
+                            <p>Порядок ценообразования и
+                                факторы влияющие на цену</p>
+                        </li>
+                    </ul>
+                    <ul class="service_list list2">
+                        <li><img src="img/File.png" alt="">
+                            <p class="take_offer">Получить предложение</p></li>
+                        <li><img src="img/Eye.png" alt="">
+                            <a href="#portfolio">Смотреть примеры работ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="second_screen_item" style="background-image: url(img/ser6.png)">
+                <div class="second_screen_item_inner">
+                    <p class="service_num">03</p>
+                    <p class="service_name">Барбекю</p>
+                    <p class="service_price">от 2500 руб/чел</p>
+                </div>
+                <div class="second_screen_item_hover">
+                    <p class="service_name">Барбекю</p>
+                    <p class="service_title">Получите предложение по выездному
+                        фуршету в котором:</p>
+                    <ul class="service_list">
+                        <li><img src="img/check.png" alt="">
+                            <p>Стоимость фуршета с обсуживанем</p></li>
+                        <li><img src="img/check.png" alt="">
+                            <p>Стоимость доставки фуршетных
+                                закусок</p>
+                        </li>
+                        <li><img src="img/check.png" alt="">
+                            <p>Порядок ценообразования и
+                                факторы влияющие на цену</p>
+                        </li>
+                    </ul>
+                    <ul class="service_list list2">
+                        <li><img src="img/File.png" alt="">
+                            <p class="take_offer">Получить предложение</p></li>
+                        <li><img src="img/Eye.png" alt="">
+                            <a href="#portfolio">Смотреть примеры работ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#portfolio" class="second_screen_item last" style="background-image: url(img/ser7.png)">
+                <div class="second_screen_item_inner">
+                    <img src="img/big3.png" alt="">
+                    <p>Смотреть наши
+                        примеры  работ</p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+<section id="for" class="third_screen">
+    <div class="container">
+        <h2>Организуем мероприятие под ключ или <span>доставим блюда:</span><span class="circle"></span></h2>
+        <div class="third_screen_content">
+            <div class="third_screen_left">
+                <p class="screen_content_title_desc"><img src="img/line1.png" alt="">Виды мероприятий, которые мы
+                    организовываем:</p>
+                <div class="third_screen_left_list">
+                    <div class="third_screen_left_list_item">
+                        <div class="third_screen_left_list_item_img">
+                            <img src="img/pizza.png" alt=""></div>
+                        <div class="third_screen_left_list_item_col">
+                            <p class="third_screen_left_list_item_col_title">для бизнеса:</p>
+                            <ul>
+                                <li>
+                                    <p>Торжественные открытия</p>
+                                </li>
+                                <li>
+                                    <p>Корпоративное питание</p>
+                                </li>
+                                <li>
+                                    <p>Официальные встречи</p>
+                                </li>
+                            </ul>
+                            <p class="show_more">Раскрыть весь список</p>
+                        </div>
+                    </div>
+                    <div class="third_screen_left_list_item">
+                        <div class="third_screen_left_list_item_img">
+                            <img src="img/present.png" alt=""></div>
+                        <div class="third_screen_left_list_item_col">
+                            <p class="third_screen_left_list_item_col_title">для праздников:</p>
+                            <ul>
+                                <li>
+                                    <p>Корпоративы</p>
+                                </li>
+                                <li>
+                                    <p>Свадьбы</p>
+                                </li>
+                                <li>
+                                    <p>Пикники</p>
+                                </li>
+                            </ul>
+                            <p class="show_more">Раскрыть весь список</p>
+                        </div>
+                    </div>
+                    <div class="third_screen_left_list_item">
+                        <div class="third_screen_left_list_item_img">
+                            <img src="img/book1.png" alt=""></div>
+                        <div class="third_screen_left_list_item_col">
+                            <p class="third_screen_left_list_item_col_title">для образования:</p>
+                            <ul>
+                                <li>
+                                    <p>Мастер-классы</p>
+                                </li>
+                                <li>
+                                    <p>Мастер-классы</p>
+                                </li>
+                                <li>
+                                    <p>Симпозиумы</p>
+                                </li>
+                            </ul>
+                            <p class="show_more">Раскрыть весь список</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="third_screen_right">
+                <div class="third_screen_right_items">
+                    <div class="third_screen_right_item" style="background-image: url(img/item1.png)">
+                        <img class="line" src="img/line2.png" alt="">
+                        <img src="img/Briefcase.png" alt="">
+                        <p>В офис</p>
+                        <div class="red_mask"></div>
+                    </div>
+                    <div class="third_screen_right_item" style="background-image: url(img/item2.png)">
+                        <img src="img/Bank.png" alt="">
+                        <p>В выставочный павильон</p>
+                        <div class="red_mask"></div>
+                    </div>
+                    <div class="third_screen_right_item" style="background-image: url(img/item3.png)">
+                        <img src="img/Bus.png" alt="">
+                        <p>На выезд</p>
+                        <div class="red_mask"></div>
+                    </div>
+                    <div class="third_screen_right_item" style="background-image: url(img/item4.png)">
+                        <img src="img/Presentation.png" alt="">
+                        <p>В арендованный
+                            конференц-зал и др.</p>
+                        <div class="red_mask"></div>
+                    </div>
+                </div>
+                <button class="btn banket">ПОДОБРАТЬ БАНКЕТНЫЙ ЗАЛ</button>
+            </div>
+        </div>
+        <button class="mobile_btn btn banket">ПОДОБРАТЬ БАНКЕТНЫЙ ЗАЛ</button>
+    </div>
+    <div class="parallax-scene" id="scene-2">
+        <div data-depth="2.5" class="parallax-item parallax-test-img-11">
+            <img src="img/coffe1.png" alt="">
+        </div>
+        <div data-depth="0.5" class="parallax-item parallax-test-img-12">
+            <img src="img/Pan.png" alt="">
+        </div>
+        <div data-depth="2.5" class="parallax-item parallax-test-img-13">
+            <img src="img/olyv.png" alt="">
+        </div>
+        <div data-depth="3.5" class="parallax-item parallax-test-img-14">
+            <img src="img/tomato.png" alt="">
+        </div>
+        <div data-depth="2" class="parallax-item parallax-test-img-15">
+            <img src="img/Thyme.png" alt="">
+        </div>
+    </div>
+</section>
+<section id="menu" class="fourth_screen">
+    <div class="container">
+        <h2>Посмотрите меню <span>наших блюд</span><span class="circle"></span></h2>
+        <div class="menu_img">
+            <div class="menu_img_inner">
+                <img src="img/screen4_back.png" alt=""></div>
+        </div>
+        <div class="fourth_screen_content">
+            <div class="fourth_screen_content_left">
+                <p class="fourth_screen_content_left_title">Популярные блюда</p>
+                <div class="popular_food_slider_wrapper">
+                    <div class="popular_food_slider">
+                        <div class="popular_food_slider_item">
+                            <img src="img/food1.png" alt="">
+                            <p class="slider_item_title">Салат Греческий</p>
+                            <div class="slider_item_price">
+                                <span class="old_price">155 руб</span>
+                                <span class="current_price">123 руб/чел</span>
+                            </div>
+                        </div>
+                        <div class="popular_food_slider_item">
+                            <img src="img/food1.png" alt="">
+                            <p class="slider_item_title">Салат Греческий</p>
+                            <div class="slider_item_price">
+                                <span class="old_price">155 руб</span>
+                                <span class="current_price">123 руб/чел</span>
+                            </div>
+                        </div>
+                        <div class="popular_food_slider_item">
+                            <img src="img/food1.png" alt="">
+                            <p class="slider_item_title">Салат Греческий</p>
+                            <div class="slider_item_price">
+                                <span class="old_price">155 руб</span>
+                                <span class="current_price">123 руб/чел</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popular_food_slider_button left">
+                        <img src="img/arrow.png" alt="">
+                    </div>
+                    <div class="popular_food_slider_button right">
+                        <img src="img/arrow.png" alt="">
+                    </div>
+                </div>
+                <p class="watch_all register"><img src="img/Eye_red.png" alt=""><span>Смотреть все</span></p>
+            </div>
+            <div class="fourth_screen_content_right">
+                <div class="fourth_screen_content_right_links">
+                    <p class="fourth_screen_content_right_links_title">Выберите необходимое Вам меню:</p>
+                    <ul>
+                        <li><a href="#">Скачать банкетное меню</a></li>
+                        <li><a href="#">Скачать меню выездного фуршета</a></li>
+                        <li><a href="#">Скачать меню фуршутного стола</a></li>
+                        <li><a href="#">Скачать меню кофе-брейка</a></li>
+                        <li><a href="#">Скачать меню новогоднего банкета</a></li>
+                    </ul>
+                </div>
+                <div class="fourth_screen_content_right_form">
+                    <p class="fourth_screen_form_title">или Разработаем <span>меню<br>
+                        под Ваше мероприятие</span></p>
+                    <form id="form_menu" class="form_menu" action="mail.php">
+                        <div class="form_row">
+                            <select name="sources" id="format" class="custom-select sources"
+                                    placeholder="Выездной кофе-брейк" required>
+                                <option selected value="profile">Выездной кофе-брейк</option>
+                                <option value="word">Выездной фуршет</option>
+                                <option value="hashtag">Барбекю</option>
+                                <option value="hashtag">Кофе-брейк</option>
+                                <option value="hashtag">Шведский стол</option>
+                                <option value="hashtag">Доставка закусок</option>
+                            </select>
+                            <label for="format">формат мероприятия:</label></div>
+                        <div class="form_row non_select">
+                            <div class="form_row_input"><label for="your_name">Ваше имя:</label>
+                                <input type="text" id="your_name" placeholder="" required></div>
+                        </div>
+                        <div class="form_row non_select">
+                            <div class="form_row_input"><label for="form_tel2">Ваш телефон:</label>
+                                <input type="tel" id="form_tel2" placeholder="+7 (**) ***-**-**" required></div>
+                        </div>
+                        <div class="form_row_input submit free">
+                            <button form="form_menu" type="submit" class="btn">ПОЛУЧИТЬ МЕНЮ</button>
+                            <span class="free_label">бесплатно</span>
+                        </div>
+                        <div class="dont_spam">
+                            <input type="checkbox" name="no" class="customRadio_radio" id="no" tabindex="0" checked>
+                            <label for="no" class="customRadio_label customRadio_label-check">
+                                <span class="checkbox-item"></span>
+                                <span>Обещаем не спамить</span>
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="stock" class="fifth_screen">
+    <div class="parallax-scene" id="scene-3">
+        <div data-depth="1.5" class="parallax-item parallax-test-img-16">
+            <img src="img/Canape1.png" alt="">
+        </div>
+        <div data-depth="0.5" class="parallax-item parallax-test-img-17">
+            <img src="img/Canape2.png" alt="">
+        </div>
+        <div data-depth="2.5" class="parallax-item parallax-test-img-18">
+            <img src="img/basil.png" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <h2>Акции и <span>подарки</span><span class="circle"></span></h2>
+        <div class="proms_wrapper">
+            <div class="proms_item" style="background-image: url(img/promo1.png)">
+                <div class="proms_item_text">
+                    <p class="proms_item_title">Шоколадный фонтан в подарок!</p>
+                    <p class="proms_item_content">Оставьте заявку на мероприятие до 31 марта 2019 года и получите
+                        шоколадный
+                        фонтан стоимостью
+                        9 000 рублей на Вашем празднике БЕСПЛАТНО</p></div>
+                <div class="btn yell register">РАССЧИТАТЬ СТОИМОСТЬ МЕРОПРИЯТИЯ</div>
+            </div>
+            <div class="proms_item" style="background-image: url(img/promo2.png)">
+                <div class="proms_item_text">
+                    <p class="proms_item_title">Кофейная станция БЕСПЛАТНО!</p>
+                    <p class="proms_item_content">Профессиональная кофемашина и бариста. Неограниченное количество
+                        порций
+                        кофе в течение мероприятия: американо, капучино, латте, ристретто и др.</p></div>
+                <div class="btn yell register">РАССЧИТАТЬ СТОИМОСТЬ МЕРОПРИЯТИЯ</div>
+            </div>
+            <div class="proms_item" style="background-image: url(img/promo3.png)">
+                <div class="proms_item_text">
+                    <p class="proms_item_title">Шоу «Пирамида из бокалов шампанского»</p>
+                    <p class="proms_item_content">Установка пирамиды из бокалов. Количество бокалов соответствует
+                        количеству
+                        гостей на мероприятии. Создание анимации «дымовая завеса» с использованием сухого льда</p>
+                </div>
+                <div class="btn yell register">РАССЧИТАТЬ СТОИМОСТЬ МЕРОПРИЯТИЯ</div>
+            </div>
+            <div class="proms_item" style="background-image: url(img/promo4.png)">
+                <div class="proms_item_text">
+                    <p class="proms_item_title">Шоу-анимация с жидким азотом</p>
+                    <p class="proms_item_content">Приготовление фруктового сорбета в присутствии гостей. Количество
+                        порций
+                        соответствует количеству гостей на мероприятии. Создание анимации «дымовая завеса» с
+                        использованием
+                        жидкого азота</p></div>
+                <div class="btn yell register">РАССЧИТАТЬ СТОИМОСТЬ МЕРОПРИЯТИЯ</div>
+            </div>
+        </div>
 
-                    <span class="icon-s1"></span>
-                    <div class="banner_left_adv_item_desc">
-                        <p>Цены производителя</p>
-                        <span>Вы не переплачиваете -  мы
-                        являемся производителями</span>
+    </div>
+</section>
+<section id="portfolio" class="sixth_screen">
+    <div class="container">
+        <h2>Примеры организованных нами <span>мероприятний</span><span class="circle"></span></h2>
+        <div class="sixth_screen_content">
+            <div class="sixth_screen_content_left">
+                <div class="portfolio_tab_header">
+                    <img src="img/champane.png" alt="">
+                    <p>Выберите тип мероприятия:</p>
+                    <div class="underline"></div>
+                </div>
+                <ul class="portfolio_tab_nav">
+                    <li>
+                        <p>Фуршеты</p>
+                    </li>
+                    <li>
+                        <p>Банкеты</p>
+                    </li>
+                    <li>
+                        <p>Кофе-брейки</p>
+                    </li>
+                    <li>
+                        <p>Шведский стол</p>
+                    </li>
+                    <li>
+                        <p>Доставка закусок</p>
+                    </li>
+                </ul>
+                <div class="form_row_input submit free">
+                    <button class="btn register">ПОЛУЧИТЬ консультацию</button>
+                    <span class="free_label">бесплатно</span>
+                </div>
+            </div>
+            <div class="sixth_screen_content_right">
+                <div class="portfolio_items_wrapper">
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
-                <div class="first_screen_banner_left_adv_item">
-                    <span class="icon-s3"></span>
-                    <div class="banner_left_adv_item_desc">
-                        <p>Все в одном месте</p>
-                        <span>от выбора кровли до комплектующих
-                            и мансардных окон</span>
+                <div class="portfolio_items_wrapper">
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
-                <div class="first_screen_banner_left_adv_item">
-                    <span class="icon-s2"></span>
-                    <div class="banner_left_adv_item_desc">
-                        <p>Огромный склад -
-                            всегда в наличии</p>
-                        <span>Заказ отгружается день в день
-                        по Вашей заявке</span>
+                <div class="portfolio_items_wrapper">
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
-
-                <div class="first_screen_banner_left_adv_item">
-                    <span class="icon-s4"></span>
-                    <div class="banner_left_adv_item_desc">
-                        <p>Гарантия до 50 лет</p>
-                        <span>даем на кровельные материалы
-                            и комплектющие</span>
+                <div class="portfolio_items_wrapper">
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio_items_wrapper">
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="portfolio_item">
+                        <div class="portfolio_image">
+                            <a data-fancybox="gallery" href="img/6_1.png"> <img src="img/6_1.png" alt=""></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="first_screen_banner_download">
-            <div class="first_screen_banner_download_header">
-                <p>Скачайте прайс-лист
-                    продукции</p>
-                <span>/ от 28 января 2019 г /</span></div>
-            <img src="img/price.png" alt="">
-            <div class="download_button">
-                <span class="icon-Forma3"></span>
-                <div class="download_button_content">
-                    <p>СКАЧАТЬ ПРАЙС-ЛИСТ</p>
-                    <span>Размер: 2,1 Mb (PDF)</span>
+    </div>
+</section>
+<section id="about" class="seventh_screen">
+    <div class="parallax-scene" id="scene-4">
+        <div data-depth="0.5" class="parallax-item parallax-test-img-19">
+            <img src="img/ChangeColor.png" alt="">
+        </div>
+        <div data-depth="0.2" class="parallax-item parallax-test-img-20">
+            <img src="img/Tomato1.png" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="seventh_screen_row">
+            <div class="seventh_screen_row_left">
+                <h2>45 слов <span>о компании</span><span class="circle"></span></h2>
+                <p class="seventh_screen_row_left_text">Более чем 10-летний опыт работы в ресторанах и сфере
+                    кейтеринга
+                    позволяет мне предложить вам услуги по
+                    проведению и организации праздников.Как человек, знакомый не понаслышке со всеми трудностями
+                    составления
+                    меню, приготовления действительно вкусных и полезных блюд, профессиональной сервировки столов, я
+                    хочу
+                    оградить вас от этих забот.</p>
+                <div class="mobile_btn seventh_screen_row_right_img"><img src="img/screen7_right_photo.png" alt="">
+                    <p class="seventh_screen_row_right_img_status">Директор кейтеринг-компании "Katrin" </p>
+                    <p class="seventh_screen_row_right_img_name">Александра Скрипченко</p>
+                </div>
+                <p class="seventh_screen_row_left_quote">«Моя ключевая задача как руководителя – дать вам
+                    возможность
+                    полностью
+                    насладиться атмосферой праздника»</p>
+                <div class="form_row_input submit free">
+                    <button type="submit" class="btn register">ОСТАВИТЬ ЗАЯВКУ НА РАСЧЕТ МЕРОПРИЯТИЯ</button>
+                    <span class="free_label">бесплатно</span>
+                </div>
+            </div>
+            <div class="seventh_screen_row_right">
+                <div class="seventh_screen_row_right_img"><img src="img/screen7_right_photo.png" alt="">
+                    <p class="seventh_screen_row_right_img_status">Директор кейтеринг-компании "Katrin" </p>
+                    <p class="seventh_screen_row_right_img_name">Александра Скрипченко</p>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<div class="second_screen container">
-
-    <div class="test_title">
-        <h2>Рассчитайте стоимость изготовления продукции
-            под Ваш объект с возможностью монтажа</h2>
-        <p>Отвечайте на вопросы и получите скидку на любую продукцию Производителя ФинКровля за экономию времени нашего
-            менеджера</p>
-    </div>
-    <div class="progress_bar_wrapper">
-        <p>Расчет пройден на:</p>
-        <div class="progress_bar">
-            <div class="progress_bar_inner">
-                <span id="percent">14%</span>
-            </div>
-        </div>
-    </div>
-    <div class="test_content_wrapper">
-        <div class="test_content_stages_wrapper">
-            <div class="main_test_wrapper">
-                <div class="test_left">
-                    <div class="test_content_stages_items_wrapper">
-                        <div class="test_content_stages_items slide_item">
-                            <p class="test_stage_title">1. Выберите тип материала</p>
-                            <div class="test_content_stages_elem_wrapper quest1">
-                                <div class="test_content_stages_elem">
-                                    <label class="test_content_stages_elem_img" for="q1_1"><span
-                                            style="background: url(img/1.1.png) no-repeat center; background-size: cover;"></span></label>
-                                    <div class="label_wrapper">
-                                        <input type="radio" class="q1" id="q1_1" name="q1">
-                                        <label class="word_label" for="q1_1">Профнастил</label>
-                                        <div class="check"></div>
-                                    </div>
-                                </div>
-                                <div class="test_content_stages_elem">
-                                    <label class="test_content_stages_elem_img" for="q1_2"><span
-                                            style="background: url(img/1.2.png) no-repeat center; background-size: cover;"></span></label>
-
-                                    <div class="label_wrapper">
-                                        <input type="radio" class="q1" id="q1_2" name="q1">
-                                        <label class="word_label" for="q1_2">Металлочерепица</label>
-                                        <div class="check"></div>
-                                    </div>
-                                </div>
-                                <div class="test_content_stages_elem">
-                                    <label class="test_content_stages_elem_img" for="q1_3"><span
-                                            style="background: url(img/1.3.png) no-repeat center; background-size: cover;"></span></label>
-
-                                    <div class="label_wrapper">
-                                        <input type="radio" class="q1" id="q1_3" name="q1">
-                                        <label class="word_label" for="q1_3">Фальцевая кровля</label>
-                                        <div class="check"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="test_slide_buttons">
-                                <button class="test_slide_buttons_prev"><span class="icon-arrow"></span>назад</button>
-                                <button class="test_slide_buttons_next">далее<span class="icon-arrow"></span></button>
-                            </div>
-                        </div>
-                        <div class="test_content_stages_items slide_item">
-                            <p class="test_stage_title">2. Выберите тип материала</p>
-                            <div class="test_content_stages_elem_wrapper quest2">
-                                <div class="test_content_stages_elem">
-                                    <label class="test_content_stages_elem_img" for="q2_1"><span
-                                            style="background: url(img/2.1.png) no-repeat center; background-size: cover;"></span></label>
-                                    <div class="label_wrapper">
-                                        <input type="radio" id="q2_1" name="q2" class="q2">
-                                        <label class="word_label" for="q2_1">Металлочерепица
-                                            листовая</label>
-                                        <div class="check"></div>
-                                    </div>
-                                    <span class="icon-quest" data-tooltip="1"></span>
-
-                                </div>
-                                <div class="test_content_stages_elem">
-                                    <label class="test_content_stages_elem_img" for="q2_2"><span
-                                            style="background: url(img/2.2.png) no-repeat center; background-size: cover;"></span></label>
-                                    <div class="label_wrapper">
-                                        <input type="radio" id="q2_2" name="q2" class="q2">
-                                        <label class="word_label" for="q2_2">Битумная черепица
-                                            (мягкая кровля)</label>
-                                        <div class="check"></div>
-                                    </div>
-                                    <span class="icon-quest" data-tooltip="1"></span>
-
-                                </div>
-                                <div class="test_content_stages_elem">
-                                    <label class="test_content_stages_elem_img" for="q2_3"><span
-                                            style="background: url(img/2.3.png) no-repeat center; background-size: cover;"></span></label>
-                                    <div class="label_wrapper">
-                                        <input type="radio" id="q2_3" name="q2" class="q2">
-                                        <label class="word_label" for="q2_3">Модульная
-                                            металлочерепица</label>
-                                        <div class="check"></div>
-                                    </div>
-                                    <span class="icon-quest" data-tooltip="1"></span>
-
-                                </div>
-                                <div class="test_content_stages_elem">
-                                    <label class="test_content_stages_elem_img" for="q2_4"><span
-                                            style="background: url(img/2.4.png) no-repeat center; background-size: cover;"></span></label>
-                                    <div class="label_wrapper">
-                                        <input type="radio" id="q2_4" name="q2" class="q2">
-                                        <label class="word_label" for="q2_4">Модульная
-                                            металлочерепица</label>
-                                        <div class="check"></div>
-                                    </div>
-                                    <span class="icon-quest" data-tooltip="1"></span>
-
-                                </div>
-                            </div>
-                            <div class="test_slide_buttons">
-                                <button class="test_slide_buttons_prev"><span class="icon-arrow"></span>назад</button>
-                                <button class="test_slide_buttons_next">далее<span class="icon-arrow"></span></button>
-                            </div>
-                        </div>
-                        <div class="test_content_scroll slide_item">
-                            <p class="test_stage_title">3. Выберите тип материала</p>
-                            <div class="test_content_scroll_wrapper">
-                                <div class="test_content_scroll_left">
-                                </div>
-                                <div class="test_content_scroll_right">
-                                    <p class="test_content_scroll_right_title">Площадь м. кв.</p>
-                                    <div class="test_content_scroll_inner">
-                                        <div id="slider"></div>
-                                        <div class="sum_input">
-                                            <input type="number" id="sum">
-                                            <label class="sum_label" for="sum">М<sup>2</sup></label>
-                                        </div>
-                                    </div>
-                                    <div class="test-slider__input">
-                                        <input type="checkbox" name="no" id="no" class="customRadio_radio">
-                                        <label for="no" class="customRadio_label customRadio_label-check">
-                                            <span class="checkbox-item"></span>
-                                            <span>Не помню</span>
-                                        </label>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="test_slide_buttons">
-                                <button class="test_slide_buttons_prev"><span class="icon-arrow"></span>назад</button>
-                                <button class="test_slide_buttons_next">далее<span class="icon-arrow"></span></button>
-                            </div>
-                        </div>
-                        <div class="test_content_radios rad1">
-                            <p class="test_stage_title">4. Выберите тип материала</p>
-                            <div class="test_content_radios_wrapper">
-                                <div class="test_content_radios_left">
-                                    <div class="label_wrapper">
-                                        <input type="radio" id="q4_1" name="q4" class="q4">
-                                        <label class="word_label" for="q4_1">Частный дом</label>
-                                        <div class="check"></div>
-                                    </div>
-                                    <div class="label_wrapper">
-                                        <input type="radio" id="q4_2" name="q4" class="q4">
-                                        <label class="word_label" for="q4_2">Церковь</label>
-                                        <div class="check"></div>
-                                    </div>
-                                    <div class="label_wrapper">
-                                        <input type="radio" id="q4_3" name="q4" class="q4">
-                                        <label class="word_label" for="q4_3">Промышленный объект</label>
-                                        <div class="check"></div>
-                                    </div>
-                                    <div class="label_wrapper">
-                                        <input type="radio" id="q4_4" name="q4" class="q4">
-                                        <label class="word_label" for="q4_4">Церковь</label>
-                                        <div class="check"></div>
-                                    </div>
-                                    <div class="label_wrapper">
-                                        <input type="radio" id="q4_5" name="q4" class="q4">
-                                        <label class="word_label" for="q4_5">Промышленный объект</label>
-                                        <div class="check"></div>
-                                    </div>
-                                </div>
-                                <div class="test_content_radios_right"></div>
-                            </div>
-                            <div class="test_slide_buttons">
-                                <button class="test_slide_buttons_prev"><span class="icon-arrow"></span>назад</button>
-                                <button class="test_slide_buttons_next">далее<span class="icon-arrow"></span></button>
-                            </div>
-                        </div>
-                        <div class="test_content_radios rad2">
-                            <p class="test_stage_title">5. Выберите тип материала</p>
-                            <div class="test_content_radios_wrapper">
-                                <div class="test_content_radios_left">
-                                    <div class="label_wrapper">
-                                        <input type="radio" id="q5_1" name="q5" class="q5">
-                                        <label class="word_label" for="q5_1">ДА, мне важно узнaть полную
-                                            стоимость</label>
-                                        <div class="check"></div>
-                                    </div>
-                                    <div class="label_wrapper">
-                                        <input type="radio" id="q5_2" name="q5" class="q5">
-                                        <label class="word_label" for="q5_2">нет, меня интересует лишь стоимость
-                                            материалов</label>
-                                        <div class="check"></div>
-                                    </div>
-                                    <div class="label_wrapper">
-                                        <input type="radio" id="q5_3" name="q5" class="q5">
-                                        <label class="word_label" for="q5_3">Оба вариaнта</label>
-                                        <div class="check"></div>
-                                    </div>
-
-                                </div>
-                                <div class="test_content_radios_right"></div>
-                            </div>
-                            <div class="test_slide_buttons">
-                                <button class="test_slide_buttons_prev"><span class="icon-arrow"></span>назад</button>
-                                <button class="test_slide_buttons_next">далее<span class="icon-arrow"></span></button>
-                            </div>
-                        </div>
-                        <div class="test_content_radios rad3">
-                            <p class="test_stage_title">6. Выберите тип материала</p>
-                            <div class="test_content_radios_wrapper">
-                                <div class="test_content_radios_left">
-                                    <div class="label_wrapper">
-                                        <input type="radio" id="q6_1" name="q6" class="q6">
-                                        <label class="word_label" for="q6_1">ДА, конечно</label>
-                                        <div class="check"></div>
-                                    </div>
-                                    <div class="label_wrapper">
-                                        <input type="radio" id="q6_2" name="q6" class="q6">
-                                        <label class="word_label" for="q6_2">Нет, я справлюсь своими силами</label>
-                                        <div class="check"></div>
-                                    </div>
-                                    <div class="label_wrapper">
-                                        <input type="radio" id="q6_3" name="q6" class="q6">
-                                        <label class="word_label" for="q6_3">Хочу узнать стоимость отдельно и
-                                            монтажа</label>
-                                        <div class="check"></div>
-                                    </div>
-
-                                </div>
-                                <div class="test_content_radios_right"></div>
-                            </div>
-                            <div class="test_slide_buttons">
-                                <button class="test_slide_buttons_prev"><span class="icon-arrow"></span>назад</button>
-                                <button class="test_slide_buttons_next">далее<span class="icon-arrow"></span></button>
-                            </div>
-                        </div>
-                        <div class="last_slide">
-                            <p class="last_slide_title">Менеджер уже приступил к расчёту кровли</p>
-                            <p class="last_slide_desc">Введите Ваш телефон и получите стоимость в течение 15 минут
-                                на:</p>
-                            <div class="last_slide_radios">
-                                <div class="label_wrapper">
-                                    <input type="radio" id="q7_1" name="q7" class="q7">
-                                    <label class="word_label" for="q7_1"><img src="img/q.png" alt="">WhatsApp</label>
-                                    <div class="check"></div>
-                                </div>
-                                <div class="label_wrapper">
-                                    <input type="radio" id="q7_2" name="q7" class="q7">
-                                    <label class="word_label" for="q7_2"><img src="img/w.png" alt="">Viber</label>
-                                    <div class="check"></div>
-                                </div>
-                                <div class="label_wrapper">
-                                    <input type="radio" id="q7_3" name="q7" class="q7">
-                                    <label class="word_label" for="q7_3"><img src="img/e.png" alt="">Telegram</label>
-                                    <div class="check"></div>
-                                </div>
-                                <div class="label_wrapper">
-                                    <input type="radio" id="q7_4" name="q7" class="q7">
-                                    <label class="word_label" for="q7_4"><img src="img/r.png" alt="">По SMS</label>
-                                    <div class="check"></div>
-                                </div>
-                            </div>
-                            <form id="tel" class="last_slide_tel">
-                                <input placeholder="+375 (**) ***-**-**" type="text" required id="mask" name="mask">
-                                <label for="mask">Ваш телефон</label>
-                            </form>
-                            <button form="tel" class="last_slide_button">
-                                ПОЛУЧИТЬ РЕЗУЛЬТАТ РАСЧЕТА<br>
-                                + скидку
-
-                            </button>
-                            <p class="lock"><img src="img/lock.png" alt="">Ваши данные в безопастности</p>
-                        </div>
+        <div class="seventh_screen_row_sliders">
+            <div class="seventh_screen_row_sliders_wrapper">
+                <p class="seventh_slider_desc">Обслуживающий персонал на Вашем
+                    мероприятии</p>
+                <div class="seventh_screen_row_sliders_item">
+                    <div class="seventh_screen_row_sliders_item_slide">
+                        <img src="img/slider1.png" alt="">
+                        <p class="seventh_screen_slide_title">повара</p>
+                        <p class="seventh_screen_slide_text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit,
+                            sed
+                            do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo.</p>
                     </div>
-
-                    <div class="confirm_popup">
-                        <div class="conf_phone">
-                            <img src="img/phone_pop.png" alt=""></div>
-                        <p class="popup_conf">Заявка отправлена</p>
-                        <p class="calc_started">Мы уже приступили<br>
-                            к расчету стоимости</p>
-                        <p class="calc_desc">Мы вышлем Вам стоимость на указанный номер телефона,<br>
-                            а также наш менеджер перезвонит Вам для уточнения<br>
-                            мелких деталей.</p>
-                        <img class="confirm_popup_close" src="img/close.png" alt="">
+                    <div class="seventh_screen_row_sliders_item_slide">
+                        <img src="img/slider1.png" alt="">
+                        <p class="seventh_screen_slide_title">повара</p>
+                        <p class="seventh_screen_slide_text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit,
+                            sed
+                            do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo.</p>
+                    </div>
+                    <div class="seventh_screen_row_sliders_item_slide">
+                        <img src="img/slider1.png" alt="">
+                        <p class="seventh_screen_slide_title">повара</p>
+                        <p class="seventh_screen_slide_text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit,
+                            sed
+                            do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo.</p>
                     </div>
                 </div>
-                <div class="discount">
-                    <div class="discount_header">
-                        <p class="discount_title">Вопрос <span id="quest_num">1</span> из 7</p>
-                        <p class="discount_desc">Ваша скидка за ответы</p>
+            </div>
+            <div class="seventh_screen_row_sliders_wrapper">
+                <p class="seventh_slider_desc">Наша материально-техническая
+                    база</p>
+                <div class="seventh_screen_row_sliders_item">
+                    <div class="seventh_screen_row_sliders_item_slide">
+                        <img src="img/slider2.png" alt="">
+                        <p class="seventh_screen_slide_title">посуда, которую мы используем</p>
+                        <p class="seventh_screen_slide_text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit,
+                            sed
+                            do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo.</p>
                     </div>
-                    <div class="total_discount">
-                        <span class="total_discount_count" id="total_discount_count">1000</span>
-                        <p class="rub">рублей</p>
+                    <div class="seventh_screen_row_sliders_item_slide">
+                        <img src="img/slider2.png" alt="">
+                        <p class="seventh_screen_slide_title">посуда, которую мы используем</p>
+                        <p class="seventh_screen_slide_text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit,
+                            sed
+                            do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo.</p>
                     </div>
-                    <div class="skip_question" id="skip">
-                        <p>пропустить вопрос</p>
+                    <div class="seventh_screen_row_sliders_item_slide">
+                        <img src="img/slider2.png" alt="">
+                        <p class="seventh_screen_slide_title">посуда, которую мы используем</p>
+                        <p class="seventh_screen_slide_text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit,
+                            sed
+                            do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="seventh_screen_row_sliders_wrapper">
+                <p class="seventh_slider_desc">Ключевые лица компании,
+                    отвественные за результат</p>
+                <div class="seventh_screen_row_sliders_item">
+                    <div class="seventh_screen_row_sliders_item_slide">
+                        <img src="img/slider3.png" alt="">
+                        <p class="seventh_screen_slide_title">Александра Скрипченко</p>
+                        <p class="seventh_screen_slide_text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit,
+                            sed
+                            do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo.</p>
+                    </div>
+                    <div class="seventh_screen_row_sliders_item_slide">
+                        <img src="img/slider3.png" alt="">
+                        <p class="seventh_screen_slide_title">Александра Скрипченко</p>
+                        <p class="seventh_screen_slide_text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit,
+                            sed
+                            do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo.</p>
+                    </div>
+                    <div class="seventh_screen_row_sliders_item_slide">
+                        <img src="img/slider3.png" alt="">
+                        <p class="seventh_screen_slide_title">Александра Скрипченко</p>
+                        <p class="seventh_screen_slide_text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit,
+                            sed
+                            do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                            ullamco
+                            laboris nisi ut aliquip ex ea commodo.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="help_block tooltip" id="tip-1">
-    <p class="help_block_title">Металлочерепица листовая</p>
-    <p class="help_block_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation.</p>
-    <div class="help_block_price">
-        <p>Цена за м. кв.:</p>
-        <span>от 9,85 &#x20bd;</span>
+</section>
+<section id="feedbacks" class="eight_screen">
+    <div class="parallax-scene" id="scene-5">
+        <div data-depth="1" class="parallax-item parallax-test-img-21">
+            <img src="img/cocktail.png" alt="">
+        </div>
+        <div data-depth="3" class="parallax-item parallax-test-img-22">
+            <img src="img/persik.png" alt="">
+        </div>
+        <div data-depth="2" class="parallax-item parallax-test-img-23">
+            <img src="img/cake.png" alt="">
+        </div>
+        <div data-depth="1" class="parallax-item parallax-test-img-24">
+            <img src="img/coconut.png" alt="">
+        </div>
+        <div data-depth="2" class="parallax-item parallax-test-img-25">
+            <img src="img/cake2.png" alt="">
+        </div>
+        <div data-depth="1.5" class="parallax-item parallax-test-img-26">
+            <img src="img/3fruits.png" alt="">
+        </div>
     </div>
-</div>
-<div class="help_block tooltip" id="tip-2">
-    <p class="help_block_title">Металлочерепица листовая</p>
-    <p class="help_block_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation.</p>
-    <div class="help_block_price">
-        <p>Цена за м. кв.:</p>
-        <span>от 9,85 &#x20bd;</span>
+
+    <div class="container"><h2>Если говорить <span>о надежности</span><span class="circle"></span></h2>
+        <div class="eight_screen_wrapper">
+            <div class="eight_screen_left">
+                <img src="img/sert_left.png" alt="">
+            </div>
+            <div class="eight_screen_center">
+                <img src="img/like.png" alt="">
+                <p class="eight_screen_desc">О качестве продукции говорит</p>
+                <p class="eight_screen_title">СЕРТИФИКАТ НАДЕЖНОГО<br>
+                    ПОСТАВЩИКА</p>
+            </div>
+            <div class="eight_screen_right">
+                <img src="img/sert_right.png" alt="">
+            </div>
+        </div>
     </div>
-</div>
-<div class="help_block tooltip" id="tip-3">
-    <p class="help_block_title">Металлочерепица листовая</p>
-    <p class="help_block_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation.</p>
-    <div class="help_block_price">
-        <p>Цена за м. кв.:</p>
-        <span>от 9,85 &#x20bd;</span>
+</section>
+<section id="advantages" class="nineth_screen">
+    <div class="parallax-scene" id="scene-6">
+        <div data-depth="1" class="parallax-item parallax-test-img-27">
+            <img src="img/Fig.png" alt="">
+        </div>
+        <div data-depth="1" class="parallax-item parallax-test-img-28">
+            <img src="img/Fig2.png" alt="">
+        </div>
+        <div data-depth="1.5" class="parallax-item parallax-test-img-29">
+            <img src="img/Anise.png" alt="">
+        </div>
+        <div data-depth="1" class="parallax-item parallax-test-img-30">
+            <img src="img/Meat.png" alt="">
+        </div>
+        <div data-depth="1.2" class="parallax-item parallax-test-img-31">
+            <img src="img/Meat2.png" alt="">
+        </div>
+        <div data-depth="1.5" class="parallax-item parallax-test-img-32">
+            <img src="img/Meat3.png" alt="">
+        </div>
     </div>
-</div>
-<div class="help_block tooltip" id="tip-4">
-    <p class="help_block_title">Металлочерепица листовая</p>
-    <p class="help_block_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-        incididunt ut labore et dolore magna aliqua tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation.</p>
-    <div class="help_block_price">
-        <p>Цена за м. кв.:</p>
-        <span>от 9,85 &#x20bd;</span>
+    <div class="container"><h2>Какие 2 момента необходимо учитывать<br>
+        при <span>заказе мероприятия</span><span class="circle"></span></h2>
+        <div class="nineth_screen_wrapper">
+            <div class="nineth_screen_col">
+                <div class="nineth_screen_col_title">
+                    <div class="nineth_screen_col_title_num">
+                        <span>1</span>
+                        <p>момент</p>
+                    </div>
+                    <p class="nineth_screen_col_title_text">Экономьте 15-20% на комиссии
+                        агрегатора, обращаясь напрямую
+                        в кейтеринговую компанию</p>
+                </div>
+                <div class="nineth_screen_col_item">
+                    <div class="nineth_screen_col_item_icon"><img src="img/screen9icon1.svg" alt=""></div>
+                    <p>Каждая кейтеринговая компания выплачивает комиссию агрегатору в размере 15-20% от суммы
+                        подтвержденного заказа. Комиссию, которая закладывается в предложение, оплачиваете Вы.
+                        Агрегатор
+                        - это не всегда гарант выгодной цены.</p>
+                </div>
+                <div class="nineth_screen_col_item">
+                    <div class="nineth_screen_col_item_icon"><img src="img/screen9icon2.svg" alt=""></div>
+                    <p>Большинство кейтеринговых компании стараются сделать предложение в рамках бюджета от
+                        заказчика.
+                        Встречая предложения с минимальным средним чеком и неоправданно завышенным выходом готовой
+                        продукции, возникают сомнения относительно качества услуги в целом.</p>
+                </div>
+                <div class="nineth_screen_col_item">
+                    <div class="nineth_screen_col_item_icon"><img src="img/screen9icon3.svg" alt=""></div>
+                    <p>Ресурсы агрегатора не позволяют сделать уникальное предложение, учитывая все пожелания
+                        заказчика.
+                        Вероятнее всего, на свой запрос Вы получите множество шаблонных расчетов. Это позволит
+                        сэкономить время, но лишит возможности получить индивидуальный подход.</p>
+                </div>
+            </div>
+            <div class="nineth_screen_col">
+                <div class="nineth_screen_col_title">
+                    <div class="nineth_screen_col_title_num">
+                        <span>2</span>
+                        <p>момент</p>
+                    </div>
+                    <p class="nineth_screen_col_title_text">Получите ТОП-10 ключевых ошибок
+                        организации мероприятия, которые
+                        помогут Вам не только</p>
+                </div>
+                <div class="form_row_input submit free">
+                    <button type="submit" class="btn register">СКАЧАТЬ (PDF 1.5 Mb)</button>
+                    <span class="free_label">бесплатно</span>
+                </div>
+                <div class="nineth_screen_book">
+                    <img class="nineth_screen_line_book" src="img/book_line9.png" alt="">
+                    <img src="img/book9.png" alt="">
+                </div>
+            </div>
+            <div class="form_row_input submit free">
+                <button type="submit" class="btn register">СКАЧАТЬ (PDF 1.5 Mb)</button>
+                <span class="free_label">бесплатно</span>
+            </div>
+        </div>
     </div>
-</div>
+
+</section>
+<section id="scheme" class="tenth_screen">
+    <div class="container">
+        <h2>Если говорить о<span>надёжности</span><span class="circle"></span></h2>
+        <div class="tenth_screen_content">
+            <div class="tenth_screen_content_row">
+                <div class="be_customer">
+                    <p class="be_sutomer_title">>250 клиентов</p>
+                    <p class="be_customer_content">Наш опыт работы - это сотни  заказчиков которым мы помогли
+                        организовать  мероприятия различного уровня</p>
+                    <div class="form_row_input submit">
+                        <button type="submit" class="btn register">СТАТЬ НАШИМ КЛИЕНТОМ</button>
+                    </div>
+                </div>
+                <div class="partners">
+                    <div class="partners_item">
+                        <div class="partners_item_inner"><img src="img/1.png" alt=""></div>
+                    </div>
+                    <div class="partners_item">
+                        <div class="partners_item_inner"><img src="img/2.png" alt=""></div>
+                    </div>
+                    <div class="partners_item">
+                        <div class="partners_item_inner"><img src="img/3.png" alt=""></div>
+                    </div>
+                    <div class="partners_item">
+                        <div class="partners_item_inner"><img src="img/4.png" alt=""></div>
+                    </div>
+                    <div class="partners_item">
+                        <div class="partners_item_inner"><img src="img/5.png" alt=""></div>
+                    </div>
+                    <div class="partners_item">
+                        <div class="partners_item_inner"><img src="img/6.png" alt=""></div>
+                    </div>
+                    <div class="partners_item">
+                        <div class="partners_item_inner"><img src="img/7.png" alt=""></div>
+                    </div>
+                    <div class="partners_item">
+                        <div class="partners_item_inner"><img src="img/8.png" alt=""></div>
+                    </div>
+                    <div class="partners_item">
+                        <div class="partners_item_inner"><img src="img/9.png" alt=""></div>
+                    </div>
+                    <div class="partners_item">
+                        <div class="partners_item_inner"><img src="img/10.png" alt=""></div>
+                    </div>
+                    <div class="partners_item">
+                        <div class="partners_item_inner"><img src="img/11.png" alt=""></div>
+                    </div>
+                    <div class="partners_item">
+                        <div class="partners_item_inner"><img src="img/12.png" alt=""></div>
+                    </div>
+                    <div class="partners_item">
+                        <div class="partners_item_inner"><img src="img/13.png" alt=""></div>
+                    </div>
+                    <div class="partners_item">
+                        <div class="partners_item_inner"><img src="img/14.png" alt=""></div>
+                    </div>
+                    <div class="partners_item">
+                        <div class="partners_item_inner"><img src="img/15.png" alt=""></div>
+                    </div>
+                    <div class="partners_item">
+                        <div class="partners_item_inner"><img src="img/16.png" alt=""></div>
+                    </div>
+                    <div class="partners_item">
+                        <div class="partners_item_inner"><img src="img/17.png" alt=""></div>
+                    </div>
+                    <div class="partners_item">
+                        <div class="partners_item_inner"><img src="img/18.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sert_gallery" data-allowfullscreen="true" data-nav="thumbs">
+                <a data-fancybox="gallery" href="img/sert1.png">
+                    <div class="sert_gallery_image">
+                        <img src="img/sert1.png" alt="">
+                        <div class="sert_gallery_hover">
+                            <img src="img/zoom.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a data-fancybox="gallery" href="img/sert2.png">
+                    <div class="sert_gallery_image">
+                        <img src="img/sert2.png" alt="">
+                        <div class="sert_gallery_hover">
+                            <img src="img/zoom.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a data-fancybox="gallery" href="img/sert3.png">
+                    <div class="sert_gallery_image">
+                        <img src="img/sert3.png" alt="">
+                        <div class="sert_gallery_hover">
+                            <img src="img/zoom.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a data-fancybox="gallery" href="img/sert4.png">
+                    <div class="sert_gallery_image">
+                        <img src="img/sert4.png" alt="">
+                        <div class="sert_gallery_hover">
+                            <img src="img/zoom.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a data-fancybox="gallery" href="img/sert5.png">
+                    <div class="sert_gallery_image">
+                        <img src="img/sert5.png" alt="">
+                        <div class="sert_gallery_hover">
+                            <img src="img/zoom.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a data-fancybox="gallery" href="img/sert1.png">
+                    <div class="sert_gallery_image">
+                        <img src="img/sert1.png" alt="">
+                        <div class="sert_gallery_hover">
+                            <img src="img/zoom.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a data-fancybox="gallery" href="img/sert2.png">
+                    <div class="sert_gallery_image">
+                        <img src="img/sert2.png" alt="">
+                        <div class="sert_gallery_hover">
+                            <img src="img/zoom.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a data-fancybox="gallery" href="img/sert3.png">
+                    <div class="sert_gallery_image">
+                        <img src="img/sert3.png" alt="">
+                        <div class="sert_gallery_hover">
+                            <img src="img/zoom.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a data-fancybox="gallery" href="img/sert4.png">
+                    <div class="sert_gallery_image">
+                        <img src="img/sert4.png" alt="">
+                        <div class="sert_gallery_hover">
+                            <img src="img/zoom.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a data-fancybox="gallery" href="img/sert5.png">
+                    <div class="sert_gallery_image">
+                        <img src="img/sert5.png" alt="">
+                        <div class="sert_gallery_hover">
+                            <img src="img/zoom.png" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="consult" class="eleventh_screen">
+    <div class="parallax-scene" id="scene-7">
+        <div data-depth="1" class="parallax-item parallax-test-img-33">
+            <img src="img/buter.png" alt="">
+        </div>
+        <div data-depth="0.5" class="parallax-item parallax-test-img-34">
+            <img src="img/pepper.png" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <h2>Особый подход к организации <span>вашего мероприятия</span><span class="circle"></span></h2>
+        <div class="eleventh_screen_content">
+            <p class="eleventh_screen_desc">Мы понимаем, что в условиях жёсткой конкуренции каждый фактор при выборе
+                кейтеринговой
+                компании играет Важную роль. У всех быстро, дешево, качественно и т.д. </p>
+            <p class="eleventh_screen_title">Все же мы работаем честно:</p>
+            <div class="eleventh_screen_photos_wrapper">
+                <div class="eleventh_screen_photos_item">
+                    <img class="document_photo" src="img/document.png" alt="">
+                    <p class="eleventh_screen_photos_item_title">Расписываем детальный<br>
+                        (прозрачный) договор</p>
+                    <p class="eleventh_screen_photos_item_desc">Вы сразу увидите, что сколько стоит</p>
+                    <div class="document_sample"><img src="img/File_red.png" alt="">
+                        <a href="">Пример договора</a></div>
+                </div>
+                <div class="eleventh_screen_photos_item">
+                    <img class="eleventh_screen_photo" src="img/screen11_img1.png" alt="">
+                    <p class="eleventh_screen_photos_item_title">Возможность БЕСПЛАТНОЙ ДЕГУСТАЦИИ</p>
+                    <p class="eleventh_screen_photos_item_desc">на крупные заказы (от 100 персон)</p>
+                    <div class="btn yell register">БЕСПЛАТНАЯ ДЕГУСТАЦИЯ</div>
+                </div>
+                <div class="eleventh_screen_photos_item">
+                    <img class="eleventh_screen_photo" src="img/screen11_img2.png" alt="">
+                    <p class="eleventh_screen_photos_item_title">Нет скрытых цен</p>
+                    <p class="eleventh_screen_photos_item_desc">( сбор за сервировку, пробковый за алкоголь и т.д.)</p>
+                </div>
+            </div>
+            <div class="advantages">
+                <p class="advantages_title">А из преимуществ работы с нами:</p>
+                <div class="advantages_row">
+                    <div class="advantages_col">
+                        <p class="screen_content_title_desc">Бесплатно</p>
+                        <ul class="advantages_col_list">
+                            <li><p>БЕСПЛАТНЫЙ РАСЧЕТ В ТЕЧЕНИЕ 15 минут</p></li>
+                            <li><p>Бесплатный подбор площадки по Вашим параметрам</p></li>
+                            <li><p>Бесплатные пакеты бонусов на Вашем мероприятии</p></li>
+                        </ul>
+                    </div>
+                    <div class="advantages_col">
+                        <p class="screen_content_title_desc">Безопасно</p>
+                        <ul class="advantages_col_list">
+                            <li><p>Безопасное и качественное обслуживание - весь персонал обучен и имеет
+                                действительные медицинские книжки</p></li>
+                            <li><p>Безопасное и качественное оборудование - столовые приборы, посуда,
+                                бокалы проходят тщательную мойку, дезинфекцию, герметичную упаковку</p></li>
+                            <li><p>Безопасный и качественный продукт - все сырье сертифицировано, а
+                                пищевое производство соответствует требуемым нормам</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contacts" class="twelfth_screen">
+    <div class="parallax-scene" id="scene-8">
+        <div data-depth="1" class="parallax-item parallax-test-img-35">
+            <img src="img/spoon.png" alt="">
+        </div>
+        <div data-depth="0.3" class="parallax-item parallax-test-img-36">
+            <img src="img/sweets1.png" alt="">
+        </div>
+        <div data-depth="0.7" class="parallax-item parallax-test-img-37">
+            <img src="img/sweets2.png" alt="">
+        </div>
+        <div data-depth="0.2" class="parallax-item parallax-test-img-38">
+            <img src="img/sweets3.png" alt="">
+        </div>
+        <div data-depth="0.2" class="parallax-item parallax-test-img-39">
+            <img src="img/ServingBoard.png" alt="">
+        </div>
+        <div data-depth="0" class="parallax-item parallax-test-img-40">
+            <img src="img/RightPage1.png" alt="">
+        </div>
+        <div data-depth="0.4" class="parallax-item parallax-test-img-41">
+            <img src="img/mediteran.png" alt="">
+        </div>
+        <div data-depth="0.5" class="parallax-item parallax-test-img-42">
+            <img src="img/Toamtoes.png" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <h2><span>6 шагов</span>, как будет происходить работа над<br>
+            Вашим заказом<span class="circle"></span></h2>
+        <div class="twelfth_screen_content">
+            <div class="twelfth_screen_steps">
+                <div class="twelfth_screen_steps_item">
+                    <img src="img/12_1.png" alt="">
+                    <p class="twelfth_screen_steps_item_num">01</p>
+                    <p class="twelfth_screen_steps_item_title">Консультация</p>
+                    <p class="twelfth_screen_steps_item_text">Оставляете заявку - мы в течение 5 минут связываемся с
+                        Вами и рассчитываем стоимость и условия
+                        заказа.</p>
+                    <form id="steps_form" action="mail.php"><input class="steps_tel" name="steps_tel" type="tel"
+                                                                   placeholder="Ваш телефон:" required>
+                        <button type="submit" form="steps_form" class="btn yell">ПОЛУЧИТЬ КОНСУЛЬТАЦИЮ</button>
+                    </form>
+
+                </div>
+                <div class="twelfth_screen_steps_item">
+                    <img src="img/12_2.png" alt="">
+                    <p class="twelfth_screen_steps_item_num">02</p>
+                    <p class="twelfth_screen_steps_item_title">Несколько ценовых
+                        предложений</p>
+                    <p class="twelfth_screen_steps_item_text">Через 40 минут Вы получаете несколько индивидуальных
+                        детализированных предложений.</p>
+                </div>
+                <div class="twelfth_screen_steps_item">
+                    <img src="img/12_3.png" alt="">
+                    <p class="twelfth_screen_steps_item_num">03</p>
+                    <p class="twelfth_screen_steps_item_title">Просмотри и
+                        подбор площадки</p>
+                    <p class="twelfth_screen_steps_item_text">Просмотр площадки банкетным менеджером совместно с Вами,
+                        внесение согласованных корректировок в предложение при необходимости.</p>
+                </div>
+                <div class="twelfth_screen_steps_item">
+                    <img src="img/12_4.png" alt="">
+                    <p class="twelfth_screen_steps_item_num">04</p>
+                    <p class="twelfth_screen_steps_item_title">Согласование
+                        договора</p>
+                    <p class="twelfth_screen_steps_item_text">Внесение корректировок при необходимости.</p>
+                </div>
+                <div class="twelfth_screen_steps_item">
+                    <img src="img/12_5.png" alt="">
+                    <p class="twelfth_screen_steps_item_num">05</p>
+                    <p class="twelfth_screen_steps_item_title">Внесение оплаты
+                        или предоплаты</p>
+                    <p class="twelfth_screen_steps_item_text">(Наличный, безналичный расчет, оплата банковской
+                        картой).</p>
+                </div>
+                <div class="twelfth_screen_steps_item">
+                    <img src="img/12_6.png" alt="">
+                    <p class="twelfth_screen_steps_item_num">06</p>
+                    <p class="twelfth_screen_steps_item_title">Просмотри и
+                        подбор площадки</p>
+                    <p class="twelfth_screen_steps_item_text">Получение обратной связи, оценка уровня сервиса по
+                        результатам мероприятия.</p>
+                </div>
+            </div>
+            <div class="twelfth_screen_title">
+                <h2>После консультации, Вы получаете <span>прозрачное<br>
+                ценовое предложение</span></h2>
+                <div class="twelfth_screen_title_arrow"><img src="img/arrow12.png" alt="">
+                </div>
+                <p class="consult_desc">Которое прикрепляется к договору и является неотъемлемой его частью</p>
+            </div>
+            <div class="twelfth_screen_form_wrapper">
+                <form class="twelfth_screen_form" id="consult_form">
+                    <p class="twelfth_screen_form_title">Получите консультацию и наиболее выгодное предложение для
+                        Вас</p>
+                    <div class="twelfth_screen_form_row">
+                        <div class="form_row non_select">
+                            <div class="form_row_input"><label for="your_name">Ваше имя:</label>
+                                <input required type="text" id="your_name_consult" placeholder=""></div>
+                        </div>
+                        <div class="form_row non_select">
+                            <div class="form_row_input"><label for="form_tel">Ваш телефон:</label>
+                                <input required type="tel" id="form_tel_consult" placeholder="+375 (**) ***-**-**">
+                            </div>
+                        </div>
+                        <div class="dont_spam">
+                            <input type="checkbox" name="no" class="customRadio_radio" id="no_consult" tabindex="0"
+                                   checked>
+                            <label for="no_consult" class="customRadio_label customRadio_label-check">
+                                <span class="checkbox-item"></span>
+                                <span>Обещаем не спамить</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form_row_input submit">
+                        <button type="submit" class="btn"><img src="img/button_icon.png" alt="">Получить консультацию
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <h2>Свяжитесь с нами и мы организуем лучший кейтеринг
+            на <span>Ваше мероприятяие</span><span class="circle"></span></h2>
+        <div class="footer_content">
+            <div class="footer_col footer_contacts">
+                <p class="footer_col_title">Контакты</p>
+                <div class="footer_contacts_inner">
+                    <div class="footer_contacts_item">
+                        <div class="footer_icon">
+                            <img src="img/phone.png" alt=""></div>
+                        <div class="footer_contacts_item_text">
+                            <span>Телефоны:</span>
+                            <a class="footer_phones" href="+74957922825">+7 (495) 792-28-25</a>
+                            <a class="footer_phones" href="+74957922825">+7 (495) 792-28-25</a>
+                        </div>
+                    </div>
+                    <div class="footer_contacts_item">
+                        <div class="footer_icon">
+                            <img src="img/spot.png" alt=""></div>
+                        <div class="footer_contacts_item_text">
+                            <span>Физический адрес:</span>
+                            <p>Каширское шоссе 13, г. Москва</p>
+                        </div>
+                    </div>
+                    <div class="footer_contacts_item">
+                        <div class="footer_icon">
+                            <img src="img/mail_red.png" alt=""></div>
+                        <div class="footer_contacts_item_text">
+                            <span>Почта:</span>
+                            <a class="footer_mail" href="mailto:info@katrin-msk.ru">info@katrin-msk.ru</a>
+                        </div>
+                    </div>
+                    <div class="footer_contacts_item">
+                        <div class="footer_icon"><img src="img/alarm.png" alt=""></div>
+                        <div class="footer_contacts_item_text">
+                            <span>График работы:</span>
+                            <p>Пн-Вс   9:00-18:00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_col requisites">
+                <p class="footer_col_title">Контакты</p>
+                <div class="footer_contacts_inner">
+                    <div class="footer_contacts_item_text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat
+                            non proident, sunt in culpa qui officia deserunt mollit.</p>
+                    </div>
+                    <div class="header_soc">
+                        <p>Напишите напрямую:</p>
+                        <div class="header_soc_row">
+                            <a class="whatsup" href="#"><img src="img/whatsup.png" alt=""><span>WhatsApp</span></a>
+                            <a class="viber" href="#"><img src="img/viber.png" alt=""><span>Viber</span></a>
+                            <a class="email" href="#"><img src="img/Mail.png" alt=""><span>E-mail</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_soc">
+                <p>Напишите напрямую:</p>
+                <div class="header_soc_row">
+                    <a class="whatsup" href="#"><img src="img/whatsup.png" alt=""><span>WhatsApp</span></a>
+                    <a class="viber" href="#"><img src="img/viber.png" alt=""><span>Viber</span></a>
+                    <a class="email" href="#"><img src="img/Mail.png" alt=""><span>E-mail</span></a>
+                </div>
+            </div>
+            <div class="footer_col map">
+                <p class="footer_col_title">Мы на карте</p>
+                <div class="footer_contacts_inner">
+                    <div class="map_wrapper">
+                        <div class="map" id="map">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer_content_under">
+            <div class="header_logo">
+                <a href="#first_screen" class="logo_img_wrap"><img src="img/logo.png" alt=""></a>
+                <p class="header_logo_desc">Организация банкетов, фуршетов, кофе -
+                    брейк и барбекю для предприятий и
+                    частных лиц в Москве с 2012 года</p>
+            </div>
+            <div class="footer_content_under_middle">
+                <p>Москва 2019</p>
+                <p>Политика конфеденциальности</p>
+            </div>
+            <div class="footer_content_under_right">
+                <p>Сделано с любовью<br>
+                    в <a class="with_love" href="https://paradigma.website">Paradigma.website</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
+<div class="popup popup_2">
+    <div class="popup_wrapper">
+        <div class="popup_inner">
+            <p class="popup_title">Спасибо за проявленный интерес!</p>
+            <p class="popup_desc">Мы прямо сейчас обрабатываем Ваш запрос<br>
+                и ответим Вам в ближайшие 30-40 минут<br>
+                в рабочее время: Пн- Пт 9:00-18:00</p>
+            <div class="popup_img"><img src="img/popup2_img.png" alt=""></div>
+        </div>
+
+    </div>
+</div>
+<div class="popup popup_3">
+    <div class="popup_wrapper">
+        <div class="popup_inner">
+            <p class="popup_title">Зарегистрируйтесь в 1 клик</p>
+            <p class="popup_desc">чтобы получить доступ к меню</p>
+            <form action="mail.php" class="popup_inputs">
+                <div class="form_row">
+                    <select name="sources" id="popup3_input1" class="custom-select sources" required
+                            placeholder="Например, фуршет на 50 персон">
+                        <option selected value="profile">Выездной банкет</option>
+                        <option value="word">Выездной фуршет</option>
+                        <option value="hashtag">Барбекю</option>
+                        <option value="hashtag">Кофе-брейк</option>
+                        <option value="hashtag">Шведский стол</option>
+                        <option value="hashtag">Доставка закусок</option>
+                    </select>
+                    <label for="popup3_input1">СМОТРЕТЬ БАНКЕТНОЕ МЕНЮ:</label></div>
+                <div class="form_row non_select">
+                    <div class="form_row_input"><label for="popup3_input2">Ваш E-mail:</label>
+                        <input required type="email" id="popup3_input2" placeholder="example@example.com"></div>
+                </div>
+                <div class="form_row non_select">
+                    <div class="form_row_input"><label for="popup3_input3">Ваш телефон:</label>
+                        <input required type="tel" id="popup3_input3" placeholder="+375 (**) ***-**-**"></div>
+                </div>
+                <button type="submit" class="btn">ПЕРЕЙТИ В РАЗДЕЛ МЕНЮ</button>
+                <div class="dont_spam">
+                    <input type="checkbox" name="no" class="customRadio_radio" id="no_popup3" tabindex="0" checked>
+                    <label for="no_popup3" class="customRadio_label customRadio_label-check">
+                        <span class="checkbox-item"></span>
+                        <span>Обещаем не спамить</span>
+                    </label>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+<div class="popup popup_4">
+    <div class="popup_wrapper">
+        <div class="popup_inner">
+            <p class="popup_title">Получите актауальное предложение</p>
+            <p class="popup_desc">Обновлено: 03.03.2019</p>
+            <form action="mail.php" class="popup_inputs">
+                <div class="form_row">
+                    <select name="sources" id="popup4_input1" class="custom-select sources" required
+                            placeholder="Оргнанизации выезного фуршета">
+                        <option selected value="profile">Выездной банкет</option>
+                        <option value="word">Выездной фуршет</option>
+                        <option value="hashtag">Барбекю</option>
+                        <option value="hashtag">Кофе-брейк</option>
+                        <option value="hashtag">Шведский стол</option>
+                        <option value="hashtag">Доставка закусок</option>
+                    </select>
+                    <label for="popup4_input1">предложение по:</label></div>
+                <div class="form_row non_select">
+                    <div class="form_row_input"><label for="popup4_input2">Ваш E-mail:</label>
+                        <input required type="email" id="popup4_input2" placeholder="example@example.com"></div>
+                </div>
+                <div class="form_row non_select">
+                    <div class="form_row_input"><label for="popup4_input3">Ваш телефон:</label>
+                        <input required type="tel" id="popup4_input3" placeholder="+375 (**) ***-**-**"></div>
+                </div>
+                <div class="popup_button_wrap">
+                    <button type="submit" class="btn">Загрузить предложение</button>
+                    <img src="img/popup4_book.png" alt=""></div>
+                <div class="dont_spam">
+                    <input type="checkbox" name="no" class="customRadio_radio" id="no_popup4" tabindex="0" checked>
+                    <label for="no_popup4" class="customRadio_label customRadio_label-check">
+                        <span class="checkbox-item"></span>
+                        <span>Обещаем не спамить</span>
+                    </label>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+<div class="popup popup_5">
+    <div class="popup_wrapper">
+        <div class="popup_inner">
+            <p class="popup_title">Подобрать банкетный зал</p>
+            <form action="mail.php" class="popup_inputs">
+                <div class="form_row">
+                    <select name="sources" id="popup5_input1" class="custom-select sources" required
+                            placeholder="Выездной кофе-брейк">
+                        <option selected value="profile">Выездной банкет</option>
+                        <option value="word">Выездной фуршет</option>
+                        <option value="hashtag">Барбекю</option>
+                        <option value="hashtag">Кофе-брейк</option>
+                        <option value="hashtag">Шведский стол</option>
+                        <option value="hashtag">Доставка закусок</option>
+                    </select>
+                    <label for="popup5_input1">Выберите формат мероприятия:</label></div>
+                <div class="form_row non_select">
+                    <div class="form_row_input"><label for="count">Ваш E-mail:</label>
+                        <input required type="email" id="popup5_input2" placeholder="example@example.com"></div>
+                </div>
+                <div class="form_row non_select">
+                    <div class="form_row_input"><label for="count">Ваш телефон:</label>
+                        <input required type="tel" id="popup5_input3" placeholder="+375 (**) ***-**-**"></div>
+                </div>
+                <button type="submit" class="btn"><img src="img/popup5_img_button.png" alt="">Подобрать зал</button>
+
+                <div class="dont_spam">
+                    <input type="checkbox" name="no" class="customRadio_radio" id="no_popup5" tabindex="0" checked>
+                    <label for="no_popup4" class="customRadio_label customRadio_label-check">
+                        <span class="checkbox-item"></span>
+                        <span>Обещаем не спамить</span>
+                    </label>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+<div class="popup popup_6">
+    <div class="popup_wrapper">
+        <div class="popup_inner">
+            <p class="popup_title">ТОП-10 ключевых ошибок<br>
+                организации мероприятия</p>
+            <form action="mail.php" class="popup_inputs">
+                <div class="form_row">
+                    <select name="sources" id="popup6_input1" class="custom-select sources" required
+                            placeholder="WhatsApp">
+                        <option selected value="profile">Выездной банкет</option>
+                        <option value="word">Выездной фуршет</option>
+                        <option value="hashtag">Барбекю</option>
+                        <option value="hashtag">Кофе-брейк</option>
+                        <option value="hashtag">Шведский стол</option>
+                        <option value="hashtag">Доставка закусок</option>
+                    </select>
+                    <label for="popup6_input1">Куда отправить:</label></div>
+                <div class="form_row non_select">
+                    <div class="form_row_input"><label for="popup6_input2">Ваш E-mail:</label>
+                        <input required type="email" id="popup6_input2" placeholder="example@example.com"></div>
+                </div>
+                <div class="form_row non_select">
+                    <div class="form_row_input"><label for="popup6_input3">Ваш телефон:</label>
+                        <input required type="tel" id="popup6_input3" placeholder="+375 (**) ***-**-**"></div>
+                </div>
+                <div class="popup_button_wrap">
+                    <div class="form_row_input submit free">
+                        <button type="submit" class="btn">ПОЛУЧИТЬ</button>
+                        <span class="free_label">бесплатно</span>
+                    </div>
+                    <img src="img/popup6_img.png" alt="">
+                </div>
+                <div class="dont_spam">
+                    <input type="checkbox" name="no" class="customRadio_radio" id="no_popup6" tabindex="0" checked>
+                    <label for="no_popup6" class="customRadio_label customRadio_label-check">
+                        <span class="checkbox-item"></span>
+                        <span>Обещаем не спамить</span>
+                    </label>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+</div>
+</div>
+
 <script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/jquery-ui.min.js"></script>
-<script src="js/ion.js"></script>
-<script src="js/jquery.maskedinput.min.js"></script>
 <script type="text/javascript" charset="utf-8" async
         src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Af7c80f2aae44c290eee1fa625d42c6925b6e8023cbb747f8eafc219eb1fa9a37&amp;width=100%&amp;lang=ru_RU&amp;id=map&amp;scroll=true"></script>
-
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.parallax.min.js"></script>
+<script src="js/parallax.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="js/jquery.mousewheel.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>
+
 </html>
