@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?92r6uw');
-  src:  url('fonts/icomoon.eot?92r6uw#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?92r6uw') format('truetype'),
-    url('fonts/icomoon.woff?92r6uw') format('woff'),
-    url('fonts/icomoon.svg?92r6uw#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?60qmsk');
+  src:  url('fonts/icomoon.eot?60qmsk#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?60qmsk') format('truetype'),
+    url('fonts/icomoon.woff?60qmsk') format('woff'),
+    url('fonts/icomoon.svg?60qmsk#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,66 +24,52 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-logo:before {
-  content: "\e90e";
-  color: #f54436;
-}
-.icon-Forma4:before {
-  content: "\e900";
-  color: #fff;
-}
-.icon-Forma1:before {
-  content: "\e901";
-  color: #fff;
-}
-.icon-Forma2:before {
-  content: "\e902";
-  color: #fff;
-}
-.icon-Forma3:before {
-  content: "\e903";
-  color: #fff;
-}
-.icon-Lock:before {
+.icon-Envelope:before {
   content: "\e90f";
-  color: #999;
+  color: #fec009;
 }
-.icon-Mail:before {
-  content: "\e904";
-  color: #ccc;
+.icon-Woman:before {
+  content: "\e900";
 }
-.icon-quest:before {
-  content: "\e905";
-  color: #fff;
-}
-.icon-teleg:before {
-  content: "\e906";
-  color: #50b1e9;
-}
-.icon-s1:before {
-  content: "\e907";
-  color: #f54436;
-}
-.icon-s2:before {
-  content: "\e908";
-  color: #f54436;
-}
-.icon-s3:before {
-  content: "\e909";
-  color: #f54436;
-}
-.icon-s4:before {
-  content: "\e90a";
-  color: #f54436;
-}
-.icon-arrow:before {
-  content: "\e90b";
+.icon-tg:before {
+  content: "\e901";
 }
 .icon-viber:before {
-  content: "\e90c";
-  color: #8c60c3;
+  content: "\e902";
 }
-.icon-whatsup:before {
+.icon-Phones:before {
+  content: "\e903";
+}
+.icon-calc:before {
+  content: "\e904";
+}
+.icon-false:before {
+  content: "\e905";
+}
+.icon-massage:before {
+  content: "\e906";
+}
+.icon-arrow_right:before {
+  content: "\e907";
+}
+.icon-arrow_left:before {
+  content: "\e908";
+}
+.icon-ico6:before {
+  content: "\e909";
+}
+.icon-ico5:before {
+  content: "\e90a";
+}
+.icon-ico4:before {
+  content: "\e90b";
+}
+.icon-ico3:before {
+  content: "\e90c";
+}
+.icon-ico2:before {
   content: "\e90d";
-  color: #71bf44;
+}
+.icon-ico1:before {
+  content: "\e90e";
 }
